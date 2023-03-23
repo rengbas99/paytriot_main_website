@@ -36,33 +36,31 @@ export default function WhatWeDoComponent() {
               <SwiperSlide>
                 <h1 id="spin1" className="big-title text-center">
                   Approval Rate?
-                  <span id="spin2" className="big-quest orange">
-                    90
-                  </span>
+                  <span id="spin2" className="big-quest orange">  90</span>
                 </h1>
               </SwiperSlide>
               <SwiperSlide>
                 <h1 className="big-title text-center">
                   Uptime?
-                  <span className="big-quest orange">98%</span>
+                  <span className="big-quest orange">  98%</span>
                 </h1>
               </SwiperSlide>
               <SwiperSlide>
                 <h1 className="big-title text-center">
                   Amount of currencies?
-                  <span className="big-quest orange">142</span>
+                  <span className="big-quest orange">  142</span>
                 </h1>
               </SwiperSlide>
               <SwiperSlide>
                 <h1 className="big-title text-center">
                   Where are we based?
-                  <span className="big-quest orange">UK</span>
+                  <span className="big-quest orange">  UK</span>
                 </h1>
               </SwiperSlide>
               <SwiperSlide>
                 <h1 className="big-title text-center">
                   Do we have a support team?
-                  <span className="big-quest orange">Absolutely</span>
+                  <span className="big-quest orange">  Absolutely</span>
                 </h1>
               </SwiperSlide>
             </Swiper>
