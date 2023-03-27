@@ -51,12 +51,10 @@ export default function AboutUs() {
         <div className="container">
           <div className="row">
             <div className="col-lg-6 ps-lg-5 d-flex flex-column justify-content-center align-items-start">
-              <h2 className="mb-lg-5">Who Are We Lorem Ipsum Dolor</h2>
+              <h2 className="mb-lg-5">Who Are We </h2>
               <p className="p-18 mb-lg-5">
-                Payriot Payments has many years experience in all aspects of the
-                International and online financial world. This allows us to
-                offer the best solution, one which is tailored to the exact
-                requirements of your business.
+                Paytriot Payment has been established for 7 years helping online businesses accept payments. 
+                We are now revolutionising the payment industry by charging a monthly flat fee for smaller businesses allowing them to accept Credit and Debit Cards without taking a percentage of their profits allowing them to scale. 
               </p>
               <Link
                 href="#"
@@ -81,16 +79,16 @@ export default function AboutUs() {
         <div className="container">
           <h2 className="text-center">Our Story</h2>
           <div className="story-wrapper position-relative">
-            <div className="yearbtn position-sticky">2022</div>
+            <div className="yearbtn position-sticky">Paytriot</div>
             <div className="row">
               <div className="col-lg-6" />
               <div className="col-lg-6 border-lineL position-relative">
                 <div className="story-box">
                   <p className="p-18">
-                    <span className="orange">January</span>
+                    <span className="orange">2015</span>
                   </p>
                   <p className="p-18">
-                    Payriot Payments has many years experience in all aspects.
+                    In 2015 Paytriot establish a business ready to assist online businesses to accept card payments at a competitive rate.
                   </p>
                 </div>
                 <div className="story-bullet-outer position-absolute top-50">
@@ -100,20 +98,20 @@ export default function AboutUs() {
               <div className="col-lg-6">
                 <div className="story-box dekstop">
                   <p className="p-18">
-                    <span className="orange">February</span>
+                    <span className="orange">2016</span>
                   </p>
                   <p className="p-18">
-                    Payriot Payments has many years experience in all aspects.
+                    Paytriot establishes a Payment Gateway allowing merchants to use a Paytriot branded payment form on their websites to accept payments securely. 
                   </p>
                 </div>
               </div>
               <div className="col-lg-6 border-lineL position-relative">
                 <div className="story-box mobile">
                   <p className="p-18">
-                    <span className="orange">February</span>
+                    <span className="orange">2016</span>
                   </p>
                   <p className="p-18">
-                    Payriot Payments has many years experience in all aspects.
+                    Paytriot establishes a Payment Gateway allowing merchants to use a Paytriot branded payment form on their websites to accept payments securely. 
                   </p>
                 </div>
                 <div className="story-bullet-outer position-absolute top-50">
@@ -124,10 +122,10 @@ export default function AboutUs() {
               <div className="col-lg-6 border-lineL position-relative">
                 <div className="story-box">
                   <p className="p-18">
-                    <span className="orange">March</span>
+                    <span className="orange">2017</span>
                   </p>
                   <p className="p-18">
-                    Payriot Payments has many years experience in all aspects.
+                    Paytriot moves its head office to Uxbridge, London with staff for our developers, customer service and sales team.
                   </p>
                 </div>
                 <div className="story-bullet-outer position-absolute top-50">
@@ -137,20 +135,20 @@ export default function AboutUs() {
               <div className="col-lg-6">
                 <div className="story-box dekstop">
                   <p className="p-18">
-                    <span className="orange">April</span>
+                    <span className="orange">2018</span>
                   </p>
                   <p className="p-18">
-                    Payriot Payments has many years experience in all aspects.
+                    Paytriot registers with the Financial Conduct Authority allowing us to issue e-money and process payments directly.
                   </p>
                 </div>
               </div>
               <div className="col-lg-6 border-lineL position-relative">
                 <div className="story-box mobile">
                   <p className="p-18">
-                    <span className="orange">April</span>
+                    <span className="orange">2018</span>
                   </p>
                   <p className="p-18">
-                    Payriot Payments has many years experience in all aspects.
+                    Paytriot registers with the Financial Conduct Authority allowing us to issue e-money and process payments directly.
                   </p>
                 </div>
                 <div className="story-bullet-outer position-absolute top-50">
@@ -161,10 +159,10 @@ export default function AboutUs() {
               <div className="col-lg-6 border-lineL position-relative">
                 <div className="story-box">
                   <p className="p-18">
-                    <span className="orange">May</span>
+                    <span className="orange">2019</span>
                   </p>
                   <p className="p-18">
-                    Payriot Payments has many years experience in all aspects.
+                    Paytriot registers as a Payment Facilitator with Visa and MasterCard. Bringing all our services in-house including boarding of merchants, underwriting and issuing card details.
                   </p>
                 </div>
                 <div className="story-bullet-outer position-absolute top-50">
@@ -174,20 +172,20 @@ export default function AboutUs() {
               <div className="col-lg-6">
                 <div className="story-box dekstop">
                   <p className="p-18">
-                    <span className="orange">June</span>
+                    <span className="orange">2022</span>
                   </p>
                   <p className="p-18">
-                    Payriot Payments has many years experience in all aspects.
+                    Paytriot introduces a subscription based service for smaller businesses. Charging a monthly fee only without the need for merchants to pay a % and one off fees per transaction.
                   </p>
                 </div>
               </div>
               <div className="col-lg-6 border-lineL position-relative">
                 <div className="story-box mobile">
                   <p className="p-18">
-                    <span className="orange">June</span>
+                    <span className="orange">2022</span>
                   </p>
                   <p className="p-18">
-                    Payriot Payments has many years experience in all aspects.
+                    Paytriot introduces a subscription based service for smaller businesses. Charging a monthly fee only without the need for merchants to pay a % and one off fees per transaction.
                   </p>
                 </div>
                 <div className="story-bullet-outer position-absolute top-50">
@@ -205,42 +203,39 @@ export default function AboutUs() {
             <div className="col-4">
               <div className="testi-wrap d-flex flex-column align-items-center">
                 <Image src={imgCustomer1} alt="" className="cust-prof" />
-                <h4 className="mt-4">Jessica Hun</h4>
-                <h5 className="fst-italic">Marketing Manager</h5>
+                <h4 className="mt-4">Bilal Latif</h4>
+                <h5 className="fst-italic">Finance Director</h5>
                 <div className="rating-wrap d-flex my-4">
                   <Image src={imgRatingSvg} alt="" />
                 </div>
                 <p className="p-16 text-opacity">
-                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-                  tempus libero vitae vehicula suscipit.”
+                  “A very cost effective solution that simplified our booking system. We can now accept cards from more countries and settle in different currencies. Would recommend Paytriot Payments to any business.”
                 </p>
               </div>
             </div>
             <div className="col-4">
               <div className="testi-wrap d-flex flex-column align-items-center">
                 <Image src={imgCustomer2} alt="" className="cust-prof" />
-                <h4 className="mt-4">August Malik</h4>
-                <h5 className="fst-italic">Photographer</h5>
+                <h4 className="mt-4">Wendy Young</h4>
+                <h5 className="fst-italic">Director / Hilton</h5>
                 <div className="rating-wrap d-flex my-4">
                   <Image src={imgRatingSvg} alt="" />
                 </div>
                 <p className="p-16 text-opacity">
-                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-                  tempus libero vitae vehicula suscipit.”
+                  “Paytriot Payments compared rates from multiple acquirers, their gateway is very user friendly and offered us the best solution after a very consultative approach.”
                 </p>
               </div>
             </div>
             <div className="col-4">
               <div className="testi-wrap d-flex flex-column align-items-center">
                 <Image src={imgCustomer3} alt="" className="cust-prof" />
-                <h4 className="mt-4">Bernedetta Carol</h4>
-                <h5 className="fst-italic">Co-Founder</h5>
+                <h4 className="mt-4">Eugene Andrews</h4>
+                <h5 className="fst-italic">Manager / Hampton by Hilton</h5>
                 <div className="rating-wrap d-flex my-4">
                   <Image src={imgRatingSvg} alt="" />
                 </div>
                 <p className="p-16 text-opacity">
-                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-                  tempus libero vitae vehicula suscipit.”
+                  “Paytriot Payments has integrated a perfect solution for our booking system. The changeover was simple and was extremely impressed with the service.”
                 </p>
               </div>
             </div>

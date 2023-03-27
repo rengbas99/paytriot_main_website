@@ -18,9 +18,7 @@ export default function SuperChargeComponent() {
                   Supercharge your business with Paytriot
                 </h2>
                 <p className="p-18 text-lg-start text-center mx-auto mx-lg-0">
-                  Paytriot has their own dedicated wallet solution. Sign up to a
-                  Paytriot wallet account to securely use your email and
-                  password to pay at websites that accept Paytriot Payments.
+                Paytriot are setup with multiple shopping carts and integrations with the worlds largest e-commerce platforms. Including Shopify, BigCommerce and Wordpress
                 </p>
                 <div className="btn-wrap d-flex justify-content-center justify-content-lg-start mt-5 mt-lg-0">
                   <Link

@@ -27,7 +27,7 @@ export default function Partners() {
           <div className="container">
             <h2 className="text-center">Paytriot Partners</h2>
             <p className="p-18 mt-4 text-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Great companies we work with 
             </p>
             <div className="row">
               <div className="col-lg-4 mb-4">

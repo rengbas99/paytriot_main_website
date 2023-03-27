@@ -88,9 +88,7 @@ export default function BankAccount() {
                 <div className="txt-wrap">
                   <h2>Easy money transfers in seconds</h2>
                   <p className="p-18 mt-4">
-                    Paytriot has their own dedicated wallet solution. Sign up to
-                    a Paytriot wallet account to securely use your email and
-                    password to pay at websites that accept Paytriot Payments.
+                    Transfer funds from your bank account with speed. We support Faster Payments, SEPA and SWIFT
                   </p>
                 </div>
               </div>
@@ -100,9 +98,7 @@ export default function BankAccount() {
                 <div className="txt-wrap">
                   <h2>One Account, Multiple Access</h2>
                   <p className="p-18 mt-4">
-                    Paytriot has their own dedicated wallet solution. Sign up to
-                    a Paytriot wallet account to securely use your email and
-                    password to pay at websites that accept Paytriot Payments.
+                    Setup your bank account with multiple currencies and access it online or via your app on iOS or Android..
                   </p>
                 </div>
               </div>

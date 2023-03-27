@@ -87,9 +87,7 @@ export default function FeatureComponent() {
                   Paytriot Dashboard
                 </h2>
                 <p className="p-18 mb-lg-5 text-center text-lg-start">
-                  Paytriot has their own dedicated wallet solution. Sign up to a
-                  Paytriot wallet account to securely use your email and
-                  password to pay at websites that accept Paytriot Payments.
+                View all your transactions on Paytriot’s state of the art dashboard. Add your bank details and verify your business to start processing LIVE transactions. 
                 </p>
               </div>
             </div>

@@ -15,7 +15,7 @@ export default function CallToAction() {
             <div className="col-lg-6 offset-lg-1 d-flex align-items-center justify-content-center">
               <div className="txt-wrap d-flex flex-column align-items-lg-start align-items-center py-5">
                 <h2 className="mb-4 mb-lg-5 text-center text-lg-start">
-                  Charge Your Payment With Paytriot
+                  Accept payments with Paytriot
                 </h2>
                 <div className="label-wrap d-flex flex-column flex-lg-row mb-5">
                   <div className="label-item d-flex align-items-center me-lg-5 mb-3 mb-lg-0">
@@ -23,7 +23,7 @@ export default function CallToAction() {
                       <Image src={iconWhiteCheckSvg} alt="" />
                     </div>
                     <label htmlFor="label-14" className="label-14">
-                      Quick Access
+                      Quick Boariding
                     </label>
                   </div>
                   <div className="label-item d-flex align-items-center me-lg-5 mb-3 mb-lg-0">
@@ -31,7 +31,7 @@ export default function CallToAction() {
                       <Image src={iconWhiteCheckSvg} alt="" />
                     </div>
                     <label htmlFor="label-14" className="label-14">
-                      24x7 Support
+                      UK Support team
                     </label>
                   </div>
                   <div className="label-item d-flex align-items-center">
@@ -39,7 +39,7 @@ export default function CallToAction() {
                       <Image src={iconWhiteCheckSvg} alt="" />
                     </div>
                     <label htmlFor="label-14" className="label-14">
-                      24x7 Support
+                      Competitive Pricing
                     </label>
                   </div>
                 </div>
