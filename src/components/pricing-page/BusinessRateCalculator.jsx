@@ -1,18 +1,48 @@
 import Slider from '@material-ui/core/Slider';
 import { makeStyles } from '@material-ui/styles';
+
 import { useState } from 'react';
 
 const useStyles = makeStyles({
   root: {
-    color: '#F7931E'
-  }
+    color: '#F7931E',
+  },
+  thumb: {
+    borderRadius: 6, // set border radius to 0 to make the thumb square
+  },
+  valueLabel:{
+    borderRadius: 4, // set border radius to 4px to make the tooltip rectangular
+    backgroundColor: '#F7931E', // change the background color of the tooltip
+    color: '#Ffff', // change the text color of the tooltip
+    width: 102, // set the width of the value label
+    height: 20, // set the height of the value label
+    fontSize: '0.875rem', // set the font size of the value label
+    lineHeight: '1.167', // set the line height of the value label
+    marginTop: '18px', // adjust the top margin to center the value label vertically
+    left: '-30px'
+  },
 });
 
 function BusinessRateCalculator() {
   const classes = useStyles();
   const [monthlyBilling, setMonthlyBilling] = useState(true);
   const [domesticPlan, setDomesticPlan] = useState(true);
-  const [price, setPrice] = useState(100);
+  const [price, setPrice] = useState(10000);
+
+  const marks = [
+    {
+      value: 10000,
+    },
+    {
+      value: 30000,
+    },
+    {
+      value: 50000,
+    },
+    {
+      value: 100000,
+    },
+  ];
 
   const handleChange = (event, newValue) => {
     setPrice(newValue);
@@ -35,10 +65,13 @@ function BusinessRateCalculator() {
   const calculateTotal = () => {
     let total = price;
     if (!domesticPlan) {
-      total = total * 2;
+      total = total * 0.29;
     }
     if (!monthlyBilling) {
-      total = total * 0.85;
+      total = (total * 0.035) - (total * 0.035 * 0.15) ;
+    }
+    if(monthlyBilling){
+      total = total * 0.035;
     }
     return total >= 0 ? Math.round(total) : 0;
   };
@@ -82,13 +115,21 @@ function BusinessRateCalculator() {
             </div>
           </div>
           <Slider
+            color = "#F7931E"
             value={price}
             onChange={handleChange}
             valueLabelDisplay="on"
-            aria-labelledby="range-slider"
-            defaultValue={100}
+            aria-label = "Restricted values"
+            defaultValue={10000}
+            marks = {marks}
+            max={100000}
+            min={0}
+            step={null}
+            valueLabelFormat={price+"/monthly"}
             classes={{
-              root: classes.root
+              root: classes.root,
+              thumb: classes.thumb,
+              valueLabel: classes.valueLabel,
             }}
           />
           <div className="d-flex justify-content-end my-3">
@@ -109,7 +150,7 @@ function BusinessRateCalculator() {
               Plan - {monthlyBilling ? 'Monthly' : 'Yearly'}
             </p>
             <div className="d-flex">
-              <div className="p-16 result-js">Total: {calculateTotal()}</div>
+              <div className="p-16 result-js">Total: {price}</div>
             </div>
           </div>
           <div className="d-flex justify-content-between mb-4">
