@@ -28,7 +28,7 @@ export default function AboutUs() {
         setButtonName("2015");
       } else if (position > 1400 && position < 1619){
         setButtonName("2016")
-      } else if (position > 1619 && position < 1829){
+      } else if (position > 1619 && position < 1832){
         setButtonName("2017")
       } else if (position > 1829 && position < 2034){
         setButtonName("2018")
