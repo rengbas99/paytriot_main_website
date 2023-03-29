@@ -71,12 +71,10 @@ export default function ContactUs() {
                   </div>
                   <h4 className="mb-3 text-center">Address</h4>
                   <p className="p-14 text-opacity text-center mb-5">
-                    Urabitur nulla mi, sollicitudin a commodo sit amet.Urabitur
-                    nulla mi, sollicitudin a commodo sit amet.Urabitur nulla mi,
-                    sollicitudin a commodo sit amet.Urabitur nulla mi,
-                    sollicitudin a commodo sit amet.Urabitur nulla mi,
-                    sollicitudin a commodo sit amet. llicitudin a commodo sit
-                    amet.Urabitur nulla mi, sollicitudin a commodo sit amet.
+                    The Charter Building, <br/>
+                    Charter Place, <br/>
+                    Uxbridge, <br/>
+                    UB8 1JG
                   </p>
                   {/* <Link
                     href="https://goo.gl/maps/AeuwB3ftnZ8JWBNn6"
