@@ -2,6 +2,8 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import React, { useState, useEffect } from "react";
+
 import iconArrowDownSvg from 'public/images/icon-arrow-down.svg';
 import imgAboutHero from 'public/images/img-about-hero.png';
 import imgCustomer1 from 'public/images/img-customer-1.png';
@@ -12,6 +14,37 @@ import imgAboutWedo from 'public/images/img-about-wedo.png';
 import imgRatingSvg from 'public/images/img-rating.svg';
 
 export default function AboutUs() {
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [buttonName, setButtonName] = useState("Button");
+
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.pageYOffset;
+      console.log(position);
+      setScrollPosition(position);
+      if (position > 1200 &&  position < 1400) {
+        setButtonName("2015");
+      } else if (position > 1400 && position < 1619){
+        setButtonName("2016")
+      } else if (position > 1619 && position < 1829){
+        setButtonName("2017")
+      } else if (position > 1829 && position < 2034){
+        setButtonName("2018")
+      } else if (position > 2034 && position < 2251){
+        setButtonName("2019")
+      } else if (position > 2251 && position < 2667){
+        setButtonName("2022")
+      }else {
+        setButtonName("Paytriot");
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [scrollPosition]);
+
+
   return (
     <>
       <Head>
@@ -79,7 +112,7 @@ export default function AboutUs() {
         <div className="container">
           <h2 className="text-center">Our Story</h2>
           <div className="story-wrapper position-relative">
-            <div className="yearbtn position-sticky">Paytriot</div>
+            <div className="yearbtn position-sticky">{buttonName}</div>
             <div className="row">
               <div className="col-lg-6" />
               <div className="col-lg-6 border-lineL position-relative">

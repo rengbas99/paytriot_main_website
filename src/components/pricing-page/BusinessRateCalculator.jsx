@@ -1,27 +1,27 @@
 import Slider from '@material-ui/core/Slider';
 import { makeStyles } from '@material-ui/styles';
-
+import Tooltip from '@material-ui/core/Tooltip';
 import { useState } from 'react';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
     color: '#F7931E',
   },
-  thumb: {
-    borderRadius: 6, // set border radius to 0 to make the thumb square
+
+  tooltip: {
+    backgroundColor: '#F7931E',
+    height: '25px',
+    fontWeight: 'bold',
+    fontSize: 14,
+    '& .MuiTooltip-arrow': {
+      color: '#F7931E',
+    },
   },
-  valueLabel:{
-    borderRadius: 4, // set border radius to 4px to make the tooltip rectangular
-    backgroundColor: '#F7931E', // change the background color of the tooltip
-    color: '#Ffff', // change the text color of the tooltip
-    width: 102, // set the width of the value label
-    height: 20, // set the height of the value label
-    fontSize: '0.875rem', // set the font size of the value label
-    lineHeight: '1.167', // set the line height of the value label
-    marginTop: '18px', // adjust the top margin to center the value label vertically
-    left: '-30px'
+  mark:{
+    color: '#F7931E'
   },
-});
+}));
+
 
 function BusinessRateCalculator() {
   const classes = useStyles();
@@ -62,18 +62,52 @@ function BusinessRateCalculator() {
     }
   };
 
+  function ValueLabelComponent(props) {
+    const { children, open, value } = props;
+    const classes = useStyles();
+  
+    return (
+      <Tooltip
+        classes={classes}
+        open={open}
+        enterTouchDelay={0}
+        placement="top"
+        title={`${price}/month`}
+        arrow={true}
+      >
+        {children}
+      </Tooltip>
+    );
+  }
+
   const calculateTotal = () => {
     let total = price;
-    if (!domesticPlan) {
-      total = total * 0.29;
+    if(domesticPlan){
+      if(price === 10000){
+        total = 29
+      }else if(price === 30000){
+        total = 39
+      }else if(price === 50000){
+        total = 59
+      } else if(price === 100000){
+        total = 99
+      }
+    }else{
+      if(price === 10000){
+        total = 49
+      }else if(price === 30000){
+        total = 69
+      }else if(price === 50000){
+        total = 99
+      } else if(price === 100000){
+        total = 139
+      }
     }
-    if (!monthlyBilling) {
-      total = (total * 0.035) - (total * 0.035 * 0.15) ;
+    console.log(total)
+    if(!monthlyBilling){
+      total = total - (total * 0.15)
     }
-    if(monthlyBilling){
-      total = total * 0.035;
-    }
-    return total >= 0 ? Math.round(total) : 0;
+    return total >= 0 ? total : 0;
   };
 
   return (
@@ -81,7 +115,7 @@ function BusinessRateCalculator() {
       <div className="row">
         <div className="col-lg-8 price-range">
           <h3 className="mb-5 fw-bold text-capitalize">Estimate Your Cost</h3>
-          <div className="d-lg-flex mb-4">
+          <div className="d-lg-flex mb-5">
             <div className="w-100 me-lg-3 mb-3 mb-lg-0">
               <div className="p-16 mb-2">Plan</div>
               <select
@@ -115,22 +149,18 @@ function BusinessRateCalculator() {
             </div>
           </div>
           <Slider
-            color = "#F7931E"
-            value={price}
+            color = '#F7931E'
+            className={classes.root}
+            value = {price}
             onChange={handleChange}
             valueLabelDisplay="on"
+            ValueLabelComponent={ValueLabelComponent}
             aria-label = "Restricted values"
             defaultValue={10000}
-            marks = {marks}
-            max={100000}
-            min={0}
             step={null}
-            valueLabelFormat={price+"/monthly"}
-            classes={{
-              root: classes.root,
-              thumb: classes.thumb,
-              valueLabel: classes.valueLabel,
-            }}
+            marks={marks}
+            min={0}
+            max={100000}
           />
           <div className="d-flex justify-content-end my-3">
             {!monthlyBilling && (
@@ -156,9 +186,9 @@ function BusinessRateCalculator() {
           <div className="d-flex justify-content-between mb-4">
             <p className="p-16">Total</p>
             <div className="d-flex">
-              <p className="p-16 fw-bold">{domesticPlan ? '£' : '$'} </p>
+              <p className="p-16 fw-bold">{'£'} </p>
               <div className="p-16 fw-bold" id="totalmonth">
-                {Math.round(calculateTotal() / 12)}
+                {calculateTotal()}
               </div>
               <p className="p-16 fw-bold">/mo</p>
             </div>
