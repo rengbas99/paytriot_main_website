@@ -186,9 +186,9 @@ function BusinessRateCalculator() {
           <div className="d-flex justify-content-between mb-4">
             <p className="p-16">Total</p>
             <div className="d-flex">
-              <p className="p-16 fw-bold">{'£'} </p>
+              <p className="p-16 ml-5 fw-bold">{' £ '} </p>
               <div className="p-16 fw-bold" id="totalmonth">
-                {calculateTotal()}
+                 { calculateTotal()}
               </div>
               <p className="p-16 fw-bold">/mo</p>
             </div>

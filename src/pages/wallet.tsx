@@ -22,13 +22,14 @@ export default function WalletPage() {
 
   // Update the state of `accordionOpen` based on the user's scroll position
   useEffect(() => {
+    console.log(window.innerHeight)
     const breakpoints =
       typeof window !== 'undefined'
         ? [
             window.innerHeight * 0.12,
             window.innerHeight * 0.27,
-            window.innerHeight * 0.45,
-            window.innerHeight * 0.56
+            window.innerHeight * 0.33,
+            window.innerHeight * 0.43
           ]
         : [];
     const handleScroll = () => {
