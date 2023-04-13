@@ -64,6 +64,17 @@ const ContactForm: React.FC = () => {
           fullWidth
         />
 
+        <Input
+          rounded
+          className="my-2"
+          size="lg"
+          type="url"
+          label="Website"
+          {...register('website', { required: true })}
+          status={errors.email ? 'error' : undefined}
+          fullWidth
+        />
+
         <Textarea
           rows={6}
           size="lg"

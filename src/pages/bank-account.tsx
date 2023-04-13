@@ -6,6 +6,7 @@ import Script from 'next/script';
 import easyMoneyJson from 'public/animation/bank-account/easy-money-transfer/easymoney.json';
 import oneAccountMultipleAccessJson from 'public/animation/bank-account/one-account-multiple-access/bank.json';
 import paytriotDashboardJson from 'public/animation/landing-page/paytriot-dashboard/paytriot-dashboard.json';
+import servicesDashboardJson from 'public/animation/services/service-dashboard.json';
 
 import iconAcceptanceSvg from 'public/images/icon-acceptance.svg';
 import iconCurrencySvg from 'public/images/icon-currency.svg';
@@ -31,7 +32,7 @@ export default function BankAccount() {
             <p className="p-18 text-center mb-5">
               A Simple &amp; Powerful Business Account is Here
             </p>
-            <LottiePlayer animationData={paytriotDashboardJson} />
+            <LottiePlayer animationData={servicesDashboardJson} />
           </div>
         </section>
         <section className="account">

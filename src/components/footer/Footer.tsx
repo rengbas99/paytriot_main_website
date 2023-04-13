@@ -27,7 +27,7 @@ export default function Footer() {
                   />
                 </div>
                 <p className="label-14 mb-4 mb-lg-0">
-                  Payriot Payments has many years experience in all aspects of
+                  Paytriot Payments has many years experience in all aspects of
                   the International and online financial world.
                 </p>
               </div>
@@ -89,7 +89,7 @@ export default function Footer() {
                     <Link href="wallet">Wallet</Link>
                   </li>
                   <li>
-                    <Link href="contact">Contact us</Link>
+                    <Link href="contact-us">Contact us</Link>
                   </li>
                 </ul>
               </div>

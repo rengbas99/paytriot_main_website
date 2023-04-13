@@ -27,7 +27,7 @@ export default function WalletPage() {
         ? [
             window.innerHeight * 0.12,
             window.innerHeight * 0.27,
-            window.innerHeight * 0.42,
+            window.innerHeight * 0.45,
             window.innerHeight * 0.56
           ]
         : [];
@@ -83,7 +83,7 @@ export default function WalletPage() {
                       title={
                         <div className="accordian-custom-title">
                           <Image src={iconExchangeSvg} alt="" />
-                          <h3 className="p-18 ms-3">Exhange Currencies</h3>
+                          <h3 className="p-18 ms-3">Exchange Currencies</h3>
                         </div>
                       }
                     >
