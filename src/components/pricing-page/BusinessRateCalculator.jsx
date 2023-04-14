@@ -186,7 +186,7 @@ function BusinessRateCalculator() {
           <div className="d-flex justify-content-between mb-4">
             <p className="p-16">Total</p>
             <div className="d-flex">
-              <p className="p-16 mr-5 fw-bold  space-after-pound">{'£'}</p>
+              <p className="p-16 mr-5 fw-bold space-after-pound">{'£'}</p>
               <div className="p-16 fw-bold " id="totalmonth">
                  { calculateTotal()}
               </div>

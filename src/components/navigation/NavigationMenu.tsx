@@ -66,11 +66,60 @@ const navigationItems: MenuItem[] = [
   //     // }
   //   ]
   // },
-  { label: 'Wallet', href: 'wallet' },
-  { label: 'Bank Account', href: 'bank-account' },
-  { label: 'Partners', href: 'partners' },
-  { label: 'Services', href: 'services' },
-  { label: 'About Us', href: 'about-us' },
+  { label: 'Home', href: '/' },
+  { label: 'Company', href: 'wallet', dropdownItems: [
+         {
+           key: 'About Us',
+           label: 'About Us',
+           description:
+             'Wallet scales apps to meet user demand, automagically, based on load.',
+          href: 'about-us'
+        },
+        {
+          key: 'Service',
+          label: 'Service',
+          description:
+            'Wallet scales apps to meet user demand, automagically, based on load.',
+         href: 'services'
+       },
+       {
+        key: 'Partners',
+        label: 'Partners',
+        description:
+          'Wallet scales apps to meet user demand, automagically, based on load.',
+        href: 'partners'
+      },
+      {
+        key: 'Blog',
+        label: 'Blog',
+        description:
+          'Wallet scales apps to meet user demand, automagically, based on load.',
+        href: 'blog'
+      }
+  ]},
+  { label: 'Products', href: 'wallet', dropdownItems: [
+      {
+        key: 'Bank Account',
+        label: 'Bank Account',
+        description:
+          'Wallet scales apps to meet user demand, automagically, based on load.',
+        href: 'bank-account'
+    },
+    {
+      key: 'Wallet',
+      label: 'Wallet',
+      description:
+        'Wallet scales apps to meet user demand, automagically, based on load.',
+      href: 'wallet'
+    },
+    {
+      key: 'Merchant Services',
+      label: 'Merchant Services',
+      description:
+        'Wallet scales apps to meet user demand, automagically, based on load.',
+      href: 'services'
+    }
+  ]},  
   { label: 'Pricing', href: 'pricing' }
   // { label: 'Contact Us', href: 'contact-us', isActive: true }
 ];
