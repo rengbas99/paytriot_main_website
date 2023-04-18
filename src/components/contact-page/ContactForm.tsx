@@ -46,7 +46,7 @@ const ContactForm: React.FC = () => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          Authorization: `Bearer b9b99d5c81ca4e6936a76f9fb9dcac6e`,
+          Authorization: `Bearer `,
         },
         body: JSON.stringify(data)
       });
