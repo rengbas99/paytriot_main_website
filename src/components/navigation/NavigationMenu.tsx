@@ -12,6 +12,7 @@ import paytriotLogoDark from 'public/images/img-logo-dark.svg';
 import paytriotLogo from 'public/images/img-logo.svg';
 import DarkModeSwitcher from './DarkModeSwitcher';
 import { icons } from './Icons';
+import { borderColor } from '@mui/system';
 
 interface MenuItem {
   label: string;
@@ -28,7 +29,7 @@ const navigationItems: MenuItem[] = [
   //       key: 'wallet',
   //       label: 'Wallet',
   //       description:
-  //         'Wallet scales apps to meet user demand, automagically, based on load.',
+  //         'Wallet scales apps to meet user demand, automatically, based on load.',
   //       icon: icons.scale,
   //       href: 'wallet'
   //     },
@@ -142,7 +143,9 @@ export default function NavigationMenu() {
       <Nav
         variant="static"
         css={{
-          $$navbarListBlurBackgroundColor: 'red'
+          $$navbarListBlurBackgroundColor: 'red',
+          boxShadow: 'none',
+
         }}
       >
         <Nav.Brand>
@@ -170,7 +173,11 @@ export default function NavigationMenu() {
                       css={{
                         px: 0,
                         dflex: 'center',
-                        svg: { pe: 'none' }
+                        svg: { pe: 'none' },
+                        color: isDark ? '$colors$hiContrastInverse' : '$colors$hiContrast',
+                        '&:hover': {
+                          color: '$colors$blue !important'
+                        }
                       }}
                       iconRight={icons.chevron}
                       ripple={false}
@@ -181,8 +188,9 @@ export default function NavigationMenu() {
                   <Dropdown.Menu
                     aria-label={`${item.label} features`}
                     css={{
-                      $$dropdownMenuWidth: '340px',
-                      $$dropdownItemHeight: '70px',
+                      $$dropdownMenuWidth: '740px',
+                      $$dropdownItemHeight: '150px',
+                      border: 'none',
                       '& .nextui-dropdown-item': {
                         py: '$4',
                         // dropdown item left icon
@@ -195,12 +203,27 @@ export default function NavigationMenu() {
                           w: '100%',
                           fontWeight: '$semibold'
                         }
-                      }
+                      },
+                      px: 0,
+                      dflex: 'center',
+                      svg: { pe: 'none' },
+                      backgroundColor: isDark ? '$black' : '$loContrast',
+                      color: isDark ? '$white' : '$hiContrast',
+                      borderColor: isDark ? '$white' : 'none',
                     }}
                   >
                     {item?.dropdownItems?.map(subItem => (
-                      <Dropdown.Item
+                      <Dropdown.Item 
                         key={subItem?.key}
+                        variant='light'
+                        css={{
+                          '&:hover': {
+                            backgroundColor: 'none',
+                          },
+                          color: isDark ? '$white' : '$hiContrast',
+                          margin: '5px',
+                          background: 'none',
+                        }}
                         showFullDescription
                         description={subItem?.description}
                         icon={subItem?.icon}

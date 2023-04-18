@@ -175,7 +175,7 @@ function BusinessRateCalculator() {
               </div>
             )}
           </div>
-          <div className="d-flex justify-content-between mb-4">
+          <div className="d-flex flex-wrap justify-content-between mb-4">
             <p className="p-16" id="transplan">
               Plan - {monthlyBilling ? 'Monthly' : 'Yearly'}
             </p>
@@ -183,11 +183,11 @@ function BusinessRateCalculator() {
               <div className="p-16 result-js">Total: {price}</div>
             </div>
           </div>
-          <div className="d-flex justify-content-between mb-4">
+          <div className="d-flex flex-wrap items-center justify-content-between mb-4">
             <p className="p-16">Total</p>
             <div className="d-flex">
-              <p className="p-16 mr-5 fw-bold space-after-pound">{'£'}</p>
-              <div className="p-16 fw-bold " id="totalmonth">
+              <p className="p-17 fw-bold text-center space-after-pound">{'£'}</p>
+              <div className="p-16  fw-bold text-center " id="totalmonth">
                  { calculateTotal()}
               </div>
               <p className="p-16 fw-bold">/mo</p>

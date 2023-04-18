@@ -263,9 +263,7 @@ h6 {
     opacity: 0.5;
 }
 
-.space-after-pound::after {
-    content: '\00a0'; /* Add a non-breaking space */
-  }
+
 
   
 .partners-txt {
