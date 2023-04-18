@@ -14,17 +14,45 @@ const ContactForm: React.FC = () => {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState('');
 
+  const data = {
+    personalizations: [
+      {
+        to: [
+          {
+            email: 'anish@paytiot.co.uk',
+            name: 'Anish Kulandaisamy',
+          },
+        ],
+        subject: 'Hello, World!',
+      },
+    ],
+    content: [
+      {
+        type: 'text/plain',
+        value: register,
+      },
+    ],
+    from: {
+      email: 'info@paytriot.co.uk',
+      name: 'Indo Smith',
+    },
+  };
+
   const onSubmit = async (data: any) => {
     setLoading(true);
 
     try {
-      const res = await fetch('/api/contact', {
+      const res = await fetch('https://api.sendgrid.com/v3/mail/send', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+          Authorization: `Bearer b9b99d5c81ca4e6936a76f9fb9dcac6e`,
         },
         body: JSON.stringify(data)
       });
+
+      console.log(res);
+      console.log(data);
 
       if (res.ok) {
         setSuccess(true);
