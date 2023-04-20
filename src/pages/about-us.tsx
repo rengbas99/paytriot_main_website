@@ -24,17 +24,17 @@ export default function AboutUs() {
       const position = window.pageYOffset;
       console.log(position);
       setScrollPosition(position);
-      if (position > 1200 &&  position < 1400) {
+      if (position > 1200 &&  position < 1325) {
         setButtonName("2015");
-      } else if (position > 1400 && position < 1619){
+      } else if (position >= 1300 && position < 1519){
         setButtonName("2016")
-      } else if (position > 1619 && position < 1832){
+      } else if (position >= 1519 && position < 1705){
         setButtonName("2017")
-      } else if (position > 1829 && position < 2034){
+      } else if (position >= 1705 && position < 1886){
         setButtonName("2018")
-      } else if (position > 2034 && position < 2251){
+      } else if (position >= 1886 && position < 2082){
         setButtonName("2019")
-      } else if (position > 2251 && position < 2667){
+      } else if (position >= 2082 && position < 2283){
         setButtonName("2022")
       }else {
         setButtonName("Paytriot");
@@ -118,10 +118,7 @@ export default function AboutUs() {
               <div className="col-lg-6 border-lineL position-relative">
                 <div className="story-box">
                   <p className="p-18">
-                    <span className="orange">2015</span>
-                  </p>
-                  <p className="p-18">
-                    In 2015 Paytriot establish a business ready to assist online businesses to accept card payments at a competitive rate.
+                    Paytriot establish a business ready to assist online businesses to accept card payments at a competitive rate.
                   </p>
                 </div>
                 <div className="story-bullet-outer position-absolute top-50">
@@ -131,7 +128,7 @@ export default function AboutUs() {
               <div className="col-lg-6">
                 <div className="story-box dekstop">
                   <p className="p-18">
-                    <span className="orange">2016</span>
+
                   </p>
                   <p className="p-18">
                     Paytriot establishes a Payment Gateway allowing merchants to use a Paytriot branded payment form on their websites to accept payments securely. 
@@ -141,7 +138,6 @@ export default function AboutUs() {
               <div className="col-lg-6 border-lineL position-relative">
                 <div className="story-box mobile">
                   <p className="p-18">
-                    <span className="orange">2016</span>
                   </p>
                   <p className="p-18">
                     Paytriot establishes a Payment Gateway allowing merchants to use a Paytriot branded payment form on their websites to accept payments securely. 
@@ -155,7 +151,6 @@ export default function AboutUs() {
               <div className="col-lg-6 border-lineL position-relative">
                 <div className="story-box">
                   <p className="p-18">
-                    <span className="orange">2017</span>
                   </p>
                   <p className="p-18">
                     Paytriot moves its head office to Uxbridge, London with staff for our developers, customer service and sales team.
@@ -168,20 +163,18 @@ export default function AboutUs() {
               <div className="col-lg-6">
                 <div className="story-box dekstop">
                   <p className="p-18">
-                    <span className="orange">2018</span>
                   </p>
                   <p className="p-18">
-                    Paytriot registers with the Financial Conduct Authority allowing us to issue e-money and process payments directly.
+                  Paytriot becomes PCI DSS Level 1 Compliant , the highest level of compliance achievable in the  payments market.
                   </p>
                 </div>
               </div>
               <div className="col-lg-6 border-lineL position-relative">
                 <div className="story-box mobile">
                   <p className="p-18">
-                    <span className="orange">2018</span>
                   </p>
                   <p className="p-18">
-                    Paytriot registers with the Financial Conduct Authority allowing us to issue e-money and process payments directly.
+                  Paytriot becomes PCI DSS Level 1 Compliant , the highest level of compliance achievable in the  payments market.
                   </p>
                 </div>
                 <div className="story-bullet-outer position-absolute top-50">
@@ -192,10 +185,9 @@ export default function AboutUs() {
               <div className="col-lg-6 border-lineL position-relative">
                 <div className="story-box">
                   <p className="p-18">
-                    <span className="orange">2019</span>
                   </p>
                   <p className="p-18">
-                    Paytriot registers as a Payment Facilitator with Visa and MasterCard. Bringing all our services in-house including boarding of merchants, underwriting and issuing card details.
+                  Paytriot registers with Visa and MasterCard. Brining all our services in-house including boarding of merchants, underwriting and card issuing. 
                   </p>
                 </div>
                 <div className="story-bullet-outer position-absolute top-50">
@@ -205,7 +197,6 @@ export default function AboutUs() {
               <div className="col-lg-6">
                 <div className="story-box dekstop">
                   <p className="p-18">
-                    <span className="orange">2022</span>
                   </p>
                   <p className="p-18">
                     Paytriot introduces a subscription based service for smaller businesses. Charging a monthly fee only without the need for merchants to pay a % and one off fees per transaction.
@@ -215,7 +206,7 @@ export default function AboutUs() {
               <div className="col-lg-6 border-lineL position-relative">
                 <div className="story-box mobile">
                   <p className="p-18">
-                    <span className="orange">2022</span>
+
                   </p>
                   <p className="p-18">
                     Paytriot introduces a subscription based service for smaller businesses. Charging a monthly fee only without the need for merchants to pay a % and one off fees per transaction.
