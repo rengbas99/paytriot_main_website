@@ -73,51 +73,51 @@ const navigationItems: MenuItem[] = [
            key: 'About Us',
            label: 'About Us',
            description:
-             'Wallet scales apps to meet user demand, automagically, based on load.',
+             'Paytriot has been established for over 7 years helping online businesses accept payments.',
           href: 'about-us'
         },
         {
           key: 'Service',
           label: 'Service',
           description:
-            'Wallet scales apps to meet user demand, automagically, based on load.',
+            'View the services we offer all merchants processing online transactions.',
          href: 'services'
        },
        {
         key: 'Partners',
         label: 'Partners',
         description:
-          'Wallet scales apps to meet user demand, automagically, based on load.',
+          'Partner with Paytriot to earn commissions or help clients integrate swiftly on your platform.',
         href: 'partners'
       },
-      {
-        key: 'Blog',
-        label: 'Blog',
-        description:
-          'Wallet scales apps to meet user demand, automagically, based on load.',
-        href: 'blog'
-      }
+ //     {
+ //       key: 'Blog',
+  //      label: 'Blog',
+  //      description:
+  //        'Wallet scales apps to meet user demand, automagically, based on load.',
+  //      href: 'blog'
+  //    }
   ]},
   { label: 'Products', href: 'wallet', dropdownItems: [
       {
         key: 'Bank Account',
         label: 'Bank Account',
         description:
-          'Wallet scales apps to meet user demand, automagically, based on load.',
+          'Have a bank account setup with Paytriot to have funds deposited from your merchant account.',
         href: 'bank-account'
     },
     {
       key: 'Wallet',
       label: 'Wallet',
       description:
-        'Wallet scales apps to meet user demand, automagically, based on load.',
+        'Download the Paytriot wallet to use at 1000s of websites that accept Paytriot Wallet as a payment method.',
       href: 'wallet'
     },
     {
       key: 'Merchant Services',
       label: 'Merchant Services',
       description:
-        'Wallet scales apps to meet user demand, automagically, based on load.',
+        'Start accepting payments in 24 hours in your online store.',
       href: 'services'
     }
   ]},  

@@ -43,7 +43,7 @@ myHeaders.append("Authorization", `Bearer ${process.env.Bearer_Token}`);
   };
 
   
-
+  console.log(process.env.Bearer_Token)
   const onSubmit = async (data: any) => {
     setLoading(true);
     console.log(data.name);
