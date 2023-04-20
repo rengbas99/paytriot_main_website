@@ -552,7 +552,7 @@ export default class ContentfulApi {
    * param: query (string)
    */
   static async callContentful(query, variables = {}, options = defaultOptions) {
-    const fetchUrl = `https://graphql.contentful.com/content/v1/spaces/${process.env.}`;
+    const fetchUrl = `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}`;
 
     const accessToken = options.preview
       ? process.env.CONTENTFUL_PREVIEW_SECRET
