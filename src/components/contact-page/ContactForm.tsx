@@ -14,45 +14,67 @@ const ContactForm: React.FC = () => {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState('');
 
-  const data = {
-    personalizations: [
+var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+myHeaders.append("Authorization", "Bearer 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");
+
+  const data1 = {
+    "personalizations": [
       {
-        to: [
+        "to": [
           {
-            email: 'anish@paytiot.co.uk',
-            name: 'Anish Kulandaisamy',
-          },
+            "email": "admin@paytriot.co.uk",
+            "name": "Admin"
+          }
         ],
-        subject: 'Hello, World!',
-      },
+        "subject": "New Enquiry for Paytriot Payments"
+      }
     ],
-    content: [
+    "content": [
       {
-        type: 'text/plain',
-        value: register,
-      },
+        "type": "text/plain",
+        "value": `New Customer enquiry from ${register.name}`
+      }
     ],
-    from: {
-      email: 'info@paytriot.co.uk',
-      name: 'Indo Smith',
-    },
+    "from": {
+      "email": "anish@paytriot.co.uk",
+      "name": "Anish"
+    }
   };
+  
 
   const onSubmit = async (data: any) => {
     setLoading(true);
+    console.log(data.name);
+    console.log(data1.content[0].value);
+
+    let  string = `New customer enquiry from ${data.name}, Please find the contact details
+
+     Name: ${data.name} ,
+
+     Email: ${data.email},
+
+     Phone: ${data.phone},
+
+     Website: ${data.website.toString()},
+
+     Message: ${data.message} .
+     
+     `
+
+    data1.content[0].value = string;
 
     try {
       const res = await fetch('https://api.sendgrid.com/v3/mail/send', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer `,
-        },
-        body: JSON.stringify(data)
-      });
+        headers: myHeaders,
+        body: JSON.stringify(data1),
+        redirect: 'follow',
 
+      });
+      console.log(process.env.bearerToken);
       console.log(res);
-      console.log(data);
+      console.log(data1);
 
       if (res.ok) {
         setSuccess(true);
@@ -85,10 +107,21 @@ const ContactForm: React.FC = () => {
           rounded
           className="my-2"
           size="lg"
-          type="email"
+          type="text"
           label="Email"
           {...register('email', { required: true })}
           status={errors.email ? 'error' : undefined}
+          fullWidth
+        />
+
+        <Input
+          rounded
+          className="my-2"
+          size="lg"
+          type="phone"
+          label="Phone"
+          {...register('phone', { required: true })}
+          status={errors.phone ? 'error' : undefined}
           fullWidth
         />
 
