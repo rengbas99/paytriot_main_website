@@ -1,4 +1,7 @@
 /** @type {import('next').NextConfig} */
+require('dotenv').config()
+
+const bearerToken = process.env.bearerToken;
 const nextConfig = {
   images: {
     domains: ['images.ctfassets.net']
@@ -48,7 +51,13 @@ const nextConfig = {
       }
     });
     return config;
+  },
+
+  env: {
+    Bearer_Token: process.env.Bearer_Token,
   }
 };
 
 module.exports = nextConfig;
+
+

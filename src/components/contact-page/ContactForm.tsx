@@ -16,14 +16,14 @@ const ContactForm: React.FC = () => {
 
 var myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/json");
-myHeaders.append("Authorization", "Bearer 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");
+myHeaders.append("Authorization", `Bearer ${process.env.Bearer_Token}`);
 
   const data1 = {
     "personalizations": [
       {
         "to": [
           {
-            "email": "admin@paytriot.co.uk",
+            "email": "anishuk24@gmail.com",
             "name": "Admin"
           }
         ],
@@ -41,12 +41,14 @@ myHeaders.append("Authorization", "Bearer SG.M9WCVeagREm34e1iGfDuDg.SwYITZKhO_aK
       "name": "Anish"
     }
   };
+
   
 
   const onSubmit = async (data: any) => {
     setLoading(true);
     console.log(data.name);
     console.log(data1.content[0].value);
+    
 
     let  string = `New customer enquiry from ${data.name}, Please find the contact details
 
@@ -70,9 +72,11 @@ myHeaders.append("Authorization", "Bearer SG.M9WCVeagREm34e1iGfDuDg.SwYITZKhO_aK
         headers: myHeaders,
         body: JSON.stringify(data1),
         redirect: 'follow',
+        mode: 'no-cors',
 
       });
-      console.log(process.env.bearerToken);
+    
+      console
       console.log(res);
       console.log(data1);
 
