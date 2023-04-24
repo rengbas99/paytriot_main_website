@@ -94,7 +94,7 @@ const navigationItems: MenuItem[] = [
         key: 'Blog',
         label: 'Blog',
         description:
-          'Wallet scales apps to meet user demand, automagically, based on load.',
+          'Read all the latest news from Paytriot and its partners.',
         href: 'blog'
       }
   ]},
