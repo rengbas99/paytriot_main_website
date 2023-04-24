@@ -90,13 +90,13 @@ const navigationItems: MenuItem[] = [
           'Partner with Paytriot to earn commissions or help clients integrate swiftly on your platform.',
         href: 'partners'
       },
- //     {
- //       key: 'Blog',
-  //      label: 'Blog',
-  //      description:
-  //        'Wallet scales apps to meet user demand, automagically, based on load.',
-  //      href: 'blog'
-  //    }
+      {
+        key: 'Blog',
+        label: 'Blog',
+        description:
+          'Wallet scales apps to meet user demand, automagically, based on load.',
+        href: 'blog'
+      }
   ]},
   { label: 'Products', href: 'wallet', dropdownItems: [
       {
