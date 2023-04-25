@@ -67,15 +67,13 @@ const ContactForm: React.FC = () => {
     console.log(data1.content[0].value);
 
     try {
-      const res = await fetch('https://api.sendgrid.com/v3/mail/send', {
+      const res = await fetch('/api/contact', {
         method: 'POST',
-        headers: myHeaders,
-        body: JSON.stringify(data1),
-        mode: 'no-cors'
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
       });
-    
-      console.log(res);
-      console.log(data1);
 
       if (res.ok) {
         setSuccess(true);

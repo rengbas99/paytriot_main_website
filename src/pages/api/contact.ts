@@ -11,12 +11,11 @@ export default async function handler(
     return;
   }
 
-  const { name, email, message } = req.body;
+  const { name, email, phone, website, message } = req.body;
+  console.log(name, email, message);
 
-  const twilio = new Twilio(
-    process.env.TWILIO_ACCOUNT_SID || '',
-    process.env.TWILIO_AUTH_TOKEN || ''
-  );
+  sgMail.setApiKey(process.env.Bearer_Token);
+
 
   const msg = {
     to: process.env.TWILIO_TO_EMAIL || '',
@@ -25,6 +24,8 @@ export default async function handler(
     html: `
       <p>Name: ${name}</p>
       <p>Email: ${email}</p>
+      <p>Website: ${website}</p>
+      <p>Phone: ${phone}</p>
       <p>Message: ${message}</p>
     `
   };
@@ -38,6 +39,7 @@ export default async function handler(
     //   from: process.env.FROM_PHONE_NUMBER || '',
     //   to: process.env.TO_PHONE_NUMBER || ''
     // });
+    console.log(res);
     res.status(200).json({ message: 'Message sent successfully' });
   } catch (err) {
     res.status(500).json({ message: 'Error sending message' });
