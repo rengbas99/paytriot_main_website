@@ -14,7 +14,7 @@ export default async function handler(
   const { name, email, phone, website, message } = req.body;
   console.log(name, email, message);
 
-  sgMail.setApiKey(process.env.Bearer_Token);
+  sgMail.setApiKey(`${process.env.Bearer_Token}`);
 
 
   const msg = {
