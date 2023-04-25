@@ -121,8 +121,8 @@ const navigationItems: MenuItem[] = [
       href: 'services'
     }
   ]},  
-  { label: 'Pricing', href: 'pricing' }
-  // { label: 'Contact Us', href: 'contact-us', isActive: true }
+  { label: 'Pricing', href: 'pricing' },
+  { label: 'Contact Us', href: 'contact-us'}
 ];
 
 const collapseItems: MenuItem[] = [
@@ -255,17 +255,56 @@ export default function NavigationMenu() {
         </Nav.Content>
         <Nav.Content>
           <Nav.Item>
-            <Button
-              style={{ textDecoration: 'none' }}
-              auto
-              rounded
-              color="warning"
-              // as={Link}
-              onClick={() => router.push('/contact-us')}
-              // href="/contact-us"
-            >
-              Contact Us
-            </Button>
+            <Dropdown>
+              <Dropdown.Button color= "warning">Sign In</Dropdown.Button>
+              <Dropdown.Menu
+                color="warning"
+                variant="solid"
+                aria-label="Actions"
+                css={{
+                  '& .nextui-dropdown-menu-content': {
+                    minWidth: '10px', // Update to 10px
+                  },
+                  $$dropdownMenuWidth: '0px',
+                  $$dropdownItemHeight: '40px',
+                  border: 'none',
+                  '& .nextui-dropdown-item': {
+                    py: '$4',
+                    // dropdown item left icon
+                    svg: {
+                      color: '$secondary',
+                      mr: '$4'
+                    },
+                    // dropdown item title
+                    '& .nextui-dropdown-item-content': {
+                      w: '100%',
+                      fontWeight: '$semibold'
+                    }
+                  },
+                  px: 0,
+
+                  svg: { pe: 'none' },
+                  backgroundColor: isDark ? '$black' : '$loContrast',
+                  color: isDark ? '$white' : '$hiContrast',
+                }}
+              >
+                <Dropdown.Item 
+                key="MMS"
+                css={{
+                  margin: '5px'
+                }}
+                >
+                  <Link style={{ textDecoration: 'none' }} href={"https://mms.paytriot.co.uk/admin/login.php"} target="_blank" rel="noopener noreferrer">
+                    MMS
+                  </Link>
+                </Dropdown.Item>
+                <Dropdown.Item key="Wallet">
+                  <Link style={{ textDecoration: 'none' }} href={"https://wallet.paytriot.co.uk/en/login"} target="_blank" rel="noopener noreferrer">
+                    Wallet
+                  </Link>
+                </Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
           </Nav.Item>
           <DarkModeSwitcher />
         </Nav.Content>

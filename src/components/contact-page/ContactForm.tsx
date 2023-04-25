@@ -16,7 +16,7 @@ const ContactForm: React.FC = () => {
 
   var myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
-  myHeaders.append("Authorization", "Bearer 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");
+  myHeaders.append("Authorization", `Bearer ${process.env.Bearer_Token}`);
 
   const data1 = {
     "personalizations": [
@@ -37,8 +37,8 @@ const ContactForm: React.FC = () => {
       }
     ],
     "from": {
-      "email": "anish@paytriot.co.uk",
-      "name": "Anish"
+      "email": "info@paytriot.co.uk",
+      "name": "Paytriot"
     }
   };
 
@@ -65,7 +65,6 @@ const ContactForm: React.FC = () => {
 
     data1.content[0].value = string;
     console.log(data1.content[0].value);
-    console.log(process.env.Bearer_Token)
 
     try {
       const res = await fetch('https://api.sendgrid.com/v3/mail/send', {
