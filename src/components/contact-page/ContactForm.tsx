@@ -70,7 +70,8 @@ const ContactForm: React.FC = () => {
       const res = await fetch('https://api.sendgrid.com/v3/mail/send', {
         method: 'POST',
         headers: myHeaders,
-        body: JSON.stringify(data1)
+        body: JSON.stringify(data1),
+        mode: 'no-cors'
       });
     
       console.log(res);
