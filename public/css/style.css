@@ -1553,7 +1553,7 @@ ul.nav-footer li {
 
 .text-light,
 [data-theme="dark"] .business-tab h3 {
-    color: #021639;
+    color: #000104;
 }
 
 .text-light,
@@ -1564,6 +1564,31 @@ ul.nav-footer li {
 .text-light,
 [data-theme="dark"] h5 {
     color: #FFFFFF !important;
+}
+
+.text-light,
+[data-theme="dark"] p {
+    color: #FFFFFF !important;
+}
+
+.text-light,
+[data-theme="dark"] li {
+    color: #FFFFFF !important;
+}
+
+.text-light,
+[data-theme="dark"] time {
+    color: #FFFFFF !important;
+}
+
+.text-light,
+[data-theme="dark"] div {
+    color: #FFFFFF !important;
+}
+
+.text-light,
+[data-theme="dark"] article {
+    box-shadow: 2px 5px 5px 5px rgb(2, 2, 11);
 }
 
 .text-light,

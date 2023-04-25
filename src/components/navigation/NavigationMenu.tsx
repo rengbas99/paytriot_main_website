@@ -138,6 +138,7 @@ export default function NavigationMenu() {
   const router = useRouter();
   const { theme } = useTheme();
   const isDark = theme === 'dark';
+  console.log(theme)
   return (
     <>
       <Nav
