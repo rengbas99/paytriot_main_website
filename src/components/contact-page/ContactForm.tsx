@@ -14,16 +14,16 @@ const ContactForm: React.FC = () => {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState('');
 
-var myHeaders = new Headers();
-myHeaders.append("Content-Type", "application/json");
-myHeaders.append("Authorization", `Bearer ${process.env.Bearer_Token}`);
+  var myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
+  myHeaders.append("Authorization", "Bearer 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");
 
   const data1 = {
     "personalizations": [
       {
         "to": [
           {
-            "email": "anishuk24@gmail.com",
+            "email": "admin@paytriot.co.uk",
             "name": "Admin"
           }
         ],
@@ -42,8 +42,7 @@ myHeaders.append("Authorization", `Bearer ${process.env.Bearer_Token}`);
     }
   };
 
-  
-  console.log(process.env.Bearer_Token)
+
   const onSubmit = async (data: any) => {
     setLoading(true);
     console.log(data.name);
@@ -65,6 +64,8 @@ myHeaders.append("Authorization", `Bearer ${process.env.Bearer_Token}`);
      `
 
     data1.content[0].value = string;
+    console.log(data1.content[0].value);
+    console.log(process.env.Bearer_Token)
 
     try {
       const res = await fetch('https://api.sendgrid.com/v3/mail/send', {
@@ -72,11 +73,8 @@ myHeaders.append("Authorization", `Bearer ${process.env.Bearer_Token}`);
         headers: myHeaders,
         body: JSON.stringify(data1),
         redirect: 'follow',
-        mode: 'no-cors',
-
       });
     
-      console
       console.log(res);
       console.log(data1);
 
