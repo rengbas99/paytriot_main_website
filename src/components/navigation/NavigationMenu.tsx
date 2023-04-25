@@ -258,12 +258,12 @@ export default function NavigationMenu() {
             <Dropdown>
               <Dropdown.Button color= "warning">Sign In</Dropdown.Button>
               <Dropdown.Menu
-                color="warning"
+                color= "warning"
                 variant="solid"
                 aria-label="Actions"
                 css={{
                   '& .nextui-dropdown-menu-content': {
-                    minWidth: '10px', // Update to 10px
+                    width: '10px', // Update to 10px
                   },
                   $$dropdownMenuWidth: '0px',
                   $$dropdownItemHeight: '40px',
@@ -291,14 +291,19 @@ export default function NavigationMenu() {
                 <Dropdown.Item 
                 key="MMS"
                 css={{
-                  margin: '5px'
+                  margin: 'auto',
                 }}
                 >
                   <Link style={{ textDecoration: 'none' }} href={"https://mms.paytriot.co.uk/admin/login.php"} target="_blank" rel="noopener noreferrer">
                     MMS
                   </Link>
                 </Dropdown.Item>
-                <Dropdown.Item key="Wallet">
+                <Dropdown.Item 
+                key="Wallet"
+                css={{
+                  margin: 'auto',
+                }}
+                >
                   <Link style={{ textDecoration: 'none' }} href={"https://wallet.paytriot.co.uk/en/login"} target="_blank" rel="noopener noreferrer">
                     Wallet
                   </Link>
