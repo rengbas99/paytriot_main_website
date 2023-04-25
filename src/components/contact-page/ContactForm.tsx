@@ -72,6 +72,7 @@ const ContactForm: React.FC = () => {
         headers: myHeaders,
         body: JSON.stringify(data1),
         redirect: 'follow',
+        mode:'no-cors'
       });
     
       console.log(res);
