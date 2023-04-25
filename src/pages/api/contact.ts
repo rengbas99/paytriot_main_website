@@ -12,7 +12,6 @@ export default async function handler(
   }
 
   const { name, email, phone, website, message } = req.body;
-  console.log(name, email, message);
 
   sgMail.setApiKey(`${process.env.Bearer_Token}`);
 
@@ -39,7 +38,7 @@ export default async function handler(
     //   from: process.env.FROM_PHONE_NUMBER || '',
     //   to: process.env.TO_PHONE_NUMBER || ''
     // });
-    console.log(res);
+
     res.status(200).json({ message: 'Message sent successfully' });
   } catch (err) {
     res.status(500).json({ message: 'Error sending message' });

@@ -103,7 +103,7 @@ function BusinessRateCalculator() {
         total = 139
       }
     }
-    console.log(total)
+    //console.log(total)
     if(!monthlyBilling){
       total = total - (total * 0.15)
     }

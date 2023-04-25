@@ -45,8 +45,8 @@ const ContactForm: React.FC = () => {
 
   const onSubmit = async (data: any) => {
     setLoading(true);
-    console.log(data.name);
-    console.log(data1.content[0].value);
+    //console.log(data.name);
+    //console.log(data1.content[0].value);
     
 
     let  string = `New customer enquiry from ${data.name}, Please find the contact details
@@ -64,7 +64,7 @@ const ContactForm: React.FC = () => {
      `
 
     data1.content[0].value = string;
-    console.log(data1.content[0].value);
+    //console.log(data1.content[0].value);
 
     try {
       const res = await fetch('/api/contact', {

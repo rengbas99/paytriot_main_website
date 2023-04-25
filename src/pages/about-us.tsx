@@ -22,7 +22,7 @@ export default function AboutUs() {
   useEffect(() => {
     const handleScroll = () => {
       const position = window.pageYOffset;
-      console.log(position);
+      //console.log(position);
       setScrollPosition(position);
       if (position > 1200 &&  position < 1325) {
         setButtonName("2015");
