@@ -95,6 +95,12 @@ const nextConfig = {
           permanent: false,
           basePath: false
          },
+         {
+          source: '/news',
+          destination: '/blog',
+          permanent: false,
+          basePath: false
+         },
          
     ];
   },
