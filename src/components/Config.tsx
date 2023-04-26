@@ -52,10 +52,6 @@ export const Config = {
   },
   menuLinks: [
     {
-      displayName: 'Home',
-      path: '/'
-    },
-    {
       displayName: 'Blog',
       path: '/blog'
     }
