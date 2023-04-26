@@ -101,6 +101,72 @@ const nextConfig = {
           permanent: false,
           basePath: false
          },
+         {
+          source: '/blog/page/about-us',
+          destination: '/about-us',
+          permanent: false,
+          basePath: false
+        },
+        {
+          source: '/blog/page/services',
+          destination: '/services',
+          permanent: false,
+          basePath: false
+         },
+         {
+          source: '/blog/page/wallet',
+          destination: '/wallet',
+          permanent: false,
+          basePath: false
+         },
+         {
+          source: '/blog/page/contact-us',
+          destination: '/contact-us',
+          permanent: false,
+          basePath: false
+         },
+         {
+          source: '/blog/page/partners',
+          destination: '/partners',
+          permanent: false,
+          basePath: false
+         },
+         {
+          source: '/blog/page/bank-account',
+          destination: '/bank-account',
+          permanent: false,
+          basePath: false
+         },
+         {
+          source: '/blog/page/pricing',
+          destination: '/pricing',
+          permanent: false,
+          basePath: false
+         },
+         {
+          source: '/blog/page/blog',
+          destination: '/blog',
+          permanent: false,
+          basePath: false
+         },
+         {
+          source: '/blog/page/terms-and-conditions',
+          destination: '/terms-and-conditions',
+          permanent: false,
+          basePath: false
+         },
+         {
+          source: '/blog/page/privacy-policy',
+          destination: '/privacy-policy',
+          permanent: false,
+          basePath: false
+         },
+         {
+          source: '/news/page/',
+          destination: '/blog',
+          permanent: false,
+          basePath: false
+         },
          
     ];
   },
