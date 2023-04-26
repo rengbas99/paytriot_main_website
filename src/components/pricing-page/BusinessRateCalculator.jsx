@@ -72,7 +72,7 @@ function BusinessRateCalculator() {
         open={open}
         enterTouchDelay={0}
         placement="top"
-        title={`${price}/month`}
+        title={`${price}/Year`}
         arrow={true}
       >
         {children}
@@ -175,22 +175,22 @@ function BusinessRateCalculator() {
               </div>
             )}
           </div>
-          <div className="d-flex flex-wrap justify-content-between mb-4">
+          <div className="d-flex flex-wrap items-center justify-content-between n mb-4">
             <p className="p-16" id="transplan">
-              Plan - {monthlyBilling ? 'Monthly' : 'Yearly'}
+              Plan 
             </p>
             <div className="d-flex">
-              <div className="p-16 result-js">Total: {price}</div>
+              <div className="p-16 result-js">{'£'}{price}</div>
             </div>
           </div>
-          <div className="d-flex flex-wrap items-center justify-content-between mb-4">
+          <div className="d-flex flex-wrap  items-center justify-content-between mb-4">
             <p className="p-16">Total</p>
-            <div className="d-flex">
-              <p className="p-17 fw-bold text-center space-after-pound">{'£'}</p>
-              <div className="p-16  fw-bold text-center " id="totalmonth">
+            <div className="d-flex flex-nowrap items-center justify-content-between ">
+              <p className="p-14 fw-bold space-after-pound">{'£'}</p>
+              <div className="p-16  fw-bold " id="totalmonth">
                  { calculateTotal()}
               </div>
-              <p className="p-16 fw-bold">/mo</p>
+              <p className="p-16 fw-bold">{' /month'} </p>
             </div>
           </div>
         </div>

@@ -10,7 +10,7 @@ import imgLuisLogo from 'public/images/img-logo-luis.png';
 import imgMatraLogo from 'public/images/img-logo-matra.png';
 import imgNetflixLogo from 'public/images/img-logo-netflix.png';
 import imgPaypalLogo from 'public/images/img-logo-paypal.png';
-import imgLogoPayrex from 'public/images/img-logo-payrex.png';
+import imgLogoShopify from 'public/images/img-logo-shopify.png';
 import imgPizzaLogo from 'public/images/img-logo-pizza.png';
 
 export default function Partners() {
@@ -34,13 +34,13 @@ export default function Partners() {
                 <div className="partners-box d-flex flex-column align-items-center">
                   <Image
                     width={'80'}
-                    src={imgLogoPayrex}
+                    src={imgLogoShopify}
                     alt=""
                     className="logo-partners"
                   />
-                  <label className="partners-txt">Payrexx</label>
+                  <label className="partners-txt">Shopify</label>
                   <p className="p-14 text-opacity">
-                    Quisque gravida nibh non mi
+                    Global Commerce Platform
                   </p>
                 </div>
               </div>
@@ -54,7 +54,7 @@ export default function Partners() {
                   />
                   <label className="partners-txt">Gambio</label>
                   <p className="p-14 text-opacity">
-                    Quisque gravida nibh non mi
+                    Ecommerce Platform
                   </p>
                 </div>
               </div>
@@ -68,7 +68,7 @@ export default function Partners() {
                   />
                   <label className="partners-txt">Hampton Inn</label>
                   <p className="p-14 text-opacity">
-                    Quisque gravida nibh non mi
+                    Leading Hotel Brand
                   </p>
                 </div>
               </div>
@@ -82,7 +82,7 @@ export default function Partners() {
                   />
                   <label className="partners-txt">Matra Asia</label>
                   <p className="p-14 text-opacity">
-                    Quisque gravida nibh non mi
+                    Agricultural Platform
                   </p>
                 </div>
               </div>
@@ -96,7 +96,7 @@ export default function Partners() {
                   />
                   <label className="partners-txt">Pizza Hut</label>
                   <p className="p-14 text-opacity">
-                    Quisque gravida nibh non mi
+                    Franchise Restaurant Industry
                   </p>
                 </div>
               </div>
@@ -110,7 +110,7 @@ export default function Partners() {
                   />
                   <label className="partners-txt">Netflix</label>
                   <p className="p-14 text-opacity">
-                    Quisque gravida nibh non mi
+                    Global Streaming Service
                   </p>
                 </div>
               </div>
@@ -124,7 +124,7 @@ export default function Partners() {
                   />
                   <label className="partners-txt">Paypal</label>
                   <p className="p-14 text-opacity">
-                    Quisque gravida nibh non mi
+                    Online Digital Wallet
                   </p>
                 </div>
               </div>
@@ -138,7 +138,7 @@ export default function Partners() {
                   />
                   <label className="partners-txt">Jump Seller</label>
                   <p className="p-14 text-opacity">
-                    Quisque gravida nibh non mi
+                    Ecommerce Platform
                   </p>
                 </div>
               </div>
@@ -152,7 +152,7 @@ export default function Partners() {
                   />
                   <label className="partners-txt">Luis Onofre</label>
                   <p className="p-14 text-opacity">
-                    Quisque gravida nibh non mi
+                    Online Retail Platform
                   </p>
                 </div>
               </div>
