@@ -137,7 +137,7 @@ const collapseItems: MenuItem[] = [
 export default function NavigationMenu() {
   const router = useRouter();
   const { theme } = useTheme();
-  const isDark = theme === 'z';
+  const isDark = theme === 'dark';
   //console.log(theme)
   return (
     <>
