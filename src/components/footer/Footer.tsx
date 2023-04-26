@@ -66,7 +66,7 @@ export default function Footer() {
                     <Link href="about-us">About us</Link>
                   </li>
                   <li>
-                    <Link href="news">News</Link>
+                    <Link href="Blog">Blog</Link>
                   </li>
                   <li>
                     <Link href="#">Testimonial</Link>
@@ -130,7 +130,7 @@ export default function Footer() {
                 </div>
               </div>
               <div className="terms-policy d-block d-lg-none mt-4">
-                <Link href="terms-and-condition" className="label-14 me-3">
+                <Link href="terms-and-conditions" className="label-14 me-3">
                   Terms &amp; Conditions
                 </Link>
                 <Link href="privacy-policy" className="label-14">
