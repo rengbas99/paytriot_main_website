@@ -26,7 +26,9 @@ export default function FeatureComponent() {
                 </p>
                 <div className="btn-wrap d-flex">
                   <Link
-                    href="#"
+                    href="https://play.google.com/store/apps/details?id=co.uk.paytriot.mob.app&pli=1 "
+                    target="_blank" 
+                    rel="noopener noreferrer"
                     className="btn btn-primary store me-3"
                     role="button"
                     data-bs-toggle="button"
@@ -34,7 +36,9 @@ export default function FeatureComponent() {
                     <Image src={logoPlayStoreSvg} alt="" className="w-100" />
                   </Link>
                   <Link
-                    href="#"
+                    href="https://apps.apple.com/gb/app/paytriot-wallet/id1458486345"
+                    target="_blank" 
+                    rel="noopener noreferrer"
                     className="btn btn-primary store"
                     role="button"
                     data-bs-toggle="button"
