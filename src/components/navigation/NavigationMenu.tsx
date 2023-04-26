@@ -68,34 +68,34 @@ const navigationItems: MenuItem[] = [
   //   ]
   // },
   { label: 'Home', href: '/' },
-  { label: 'Company', href: 'wallet', dropdownItems: [
+  { label: 'Company', href: '/wallet', dropdownItems: [
          {
            key: 'About Us',
            label: 'About Us',
            description:
              'Paytriot has been established for over 7 years helping online businesses accept payments.',
-          href: 'about-us'
+          href: '/about-us'
         },
         {
           key: 'Service',
           label: 'Service',
           description:
             'View the services we offer all merchants processing online transactions.',
-         href: 'services'
+         href: '/services'
        },
        {
         key: 'Partners',
         label: 'Partners',
         description:
           'Partner with Paytriot to earn commissions or help clients integrate swiftly on your platform.',
-        href: 'partners'
+        href: '/partners'
       },
       {
         key: 'Blog',
         label: 'Blog',
         description:
           'Read all the latest news from Paytriot and its partners.',
-        href: 'blog'
+        href: '/blog'
       }
   ]},
   { label: 'Products', href: 'wallet', dropdownItems: [
@@ -104,25 +104,25 @@ const navigationItems: MenuItem[] = [
         label: 'Bank Account',
         description:
           'Have a bank account setup with Paytriot to have funds deposited from your merchant account.',
-        href: 'bank-account'
+        href: '/bank-account'
     },
     {
       key: 'Wallet',
       label: 'Wallet',
       description:
         'Download the Paytriot wallet to use at 1000s of websites that accept Paytriot Wallet as a payment method.',
-      href: 'wallet'
+      href: '/wallet'
     },
     {
       key: 'Merchant Services',
       label: 'Merchant Services',
       description:
         'Start accepting payments in 24 hours in your online store.',
-      href: 'services'
+      href: '/services'
     }
   ]},  
-  { label: 'Pricing', href: 'pricing' },
-  { label: 'Contact Us', href: 'contact-us'}
+  { label: 'Pricing', href: '/pricing' },
+  { label: 'Contact Us', href: '/contact-us'}
 ];
 
 const collapseItems: MenuItem[] = [

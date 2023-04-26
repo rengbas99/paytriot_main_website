@@ -34,7 +34,13 @@ const nextConfig = {
          source: '/post/:slug(\\d{1,})',
          destination: '/news/:slug',
          permanent: false
-        }
+        },
+        {
+          source: '/about-us',
+          destination: '/about-us',
+          permanent: false,
+          basePath: false
+         }
     ];
   },
 
