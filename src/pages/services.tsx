@@ -50,7 +50,7 @@ export default function Services() {
                   </p>
                   <div className="cta-wrap d-flex">
                     <Link
-                      href="signup.html"
+                      href="contact-us"
                       className="btn btn-primary me-4"
                       role="button"
                       data-bs-toggle="button"
@@ -58,7 +58,7 @@ export default function Services() {
                       Get Started
                     </Link>
                     <Link
-                      href="#"
+                      href="contact-us"
                       className="btn btn-secondary"
                       role="button"
                       data-bs-toggle="button"
