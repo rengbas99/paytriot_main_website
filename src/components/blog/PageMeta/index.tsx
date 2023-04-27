@@ -5,6 +5,8 @@ import { Config } from '@/utils/Config';
 export default function PageMeta(props: any) {
   const { title, description, url, canonical } = props;
   const siteTitle = `${title} | ${Config.site.title}`;
+  const siteDescription = `${description} | ${Config.site.title}`;
+  console.log(description);
 
   return (
     <Head>
@@ -19,13 +21,13 @@ export default function PageMeta(props: any) {
         href={`https://${Config.site.domain}/feed.xml`}
       />
 
-      <meta name="title" content={siteTitle} />
+      <meta name="title" content={siteDescription} />
       <meta property="og:title" content={title} />
       <meta property="twitter:title" content={title} />
 
-      <meta name="description" content={description} />
-      <meta property="og:description" content={description} />
-      <meta property="twitter:description" content={description} />
+      <meta name="description" content={`${description} and ${siteTitle}`} />
+      <meta property="og:description" content={siteDescription} />
+      <meta property="twitter:description" content={siteDescription} />
 
       <meta property="og:url" content={url} />
       <meta property="twitter:url" content={url} />

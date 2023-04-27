@@ -20,12 +20,13 @@ export default function BlogIndexPage(props: any) {
   const pageDescription = pageContent
     ? pageContent.description
     : 'Articles | Paytriot Blog';
+    console.log(pageDescription);
 
   return (
     <MainLayout preview={preview}>
       <PageMeta
         title={`${pageTitle} Page ${currentPage}`}
-        description={pageDescription}
+        description={`${pageTitle} Page ${currentPage}`}
         url={`${Config.pageMeta.blogIndex.url}/page/${currentPage}`}
       />
 
