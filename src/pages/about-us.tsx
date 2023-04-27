@@ -59,28 +59,6 @@ export default function AboutUs() {
         />
         <title>About Us | Paytriot</title>
       </Head>
-      {/* @TODO
-      <nav className="nav-l position-fixed">
-        <div className="nav-contain">
-          <ul>
-            <li className="label-nav hero active">
-              <Link href="#hero">Who</Link>
-            </li>
-            <li className="label-nav our-story">
-              <Link href="#our-story">Why paytriot</Link>
-            </li>
-            <li className="label-nav customer-say">
-              <Link href="#customer-say">Why</Link>
-            </li>
-            <li className="label-nav wedo-about">
-              <Link href="#wedo-about">What is</Link>
-            </li>
-            <li className="label-nav call-to-action">
-              <Link href="#call-to-action">How to</Link>
-            </li>
-          </ul>
-        </div>
-      </nav> */}
       <section className="hero" id="hero">
         <div className="container">
           <div className="row">

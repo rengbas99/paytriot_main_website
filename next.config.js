@@ -2,10 +2,13 @@
 require('dotenv').config()
 
 const bearerToken = process.env.bearerToken;
+
+
 const nextConfig = {
   images: {
     domains: ['images.ctfassets.net']
   },
+
   reactStrictMode: true,
   async redirects() {
     //  permanent: false - 307 redirection

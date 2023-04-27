@@ -25,45 +25,6 @@ export default function ContactUs() {
             <h1 className="text-center">Contact Us</h1>
             <p className="p-18 text-center">Get in touch with us</p>
             <div className="row">
-              {/* <div className="col-lg-4 d-flex justify-content-center">
-                <div className="contact-wrap d-flex flex-column align-items-center">
-                  <div className="contact-icon mb-4">
-                    <Image src={iconPhoneSvg} alt="" className="w-100" />
-                  </div>
-                  <h4 className="mb-3 text-center">Costumer Service</h4>
-                  <p className="p-14 text-opacity text-center mb-5">
-                    Urabitur nulla mi, sollicitudin a commodo sit amet.
-                  </p>
-                  <Link
-                    href="#"
-                    className="btn btn-primary w-100"
-                    role="button"
-                    data-bs-toggle="button"
-                  >
-                    Contact
-                  </Link>
-                </div>
-              </div>
-              <div className="col-lg-4 d-flex justify-content-center">
-                <div className="contact-wrap d-flex flex-column align-items-center">
-                  <div className="contact-icon mb-4">
-                    <Image src={iconMediaSvg} alt="" className="w-100" />
-                  </div>
-                  <h4 className="mb-3 text-center">Media and Press</h4>
-                  <p className="p-14 text-opacity text-center mb-5">
-                    Urabitur nulla mi, sollicitudin a commodo sit amet.
-                  </p>
-                  <Link
-                    href="#"
-                    className="btn btn-primary w-100"
-                    role="button"
-                    data-bs-toggle="button"
-                  >
-                    Visit
-                  </Link>
-                </div>
-              </div> */}
-
               <ContactForm />
               <div className="col-lg-4 d-flex justify-content-center">
                 <div className="contact-wrap d-flex flex-column align-items-center">
@@ -77,15 +38,6 @@ export default function ContactUs() {
                     Uxbridge, <br/>
                     UB8 1JG
                   </p>
-                  {/* <Link
-                    href="https://goo.gl/maps/AeuwB3ftnZ8JWBNn6"
-                    target="_blank"
-                    className="btn btn-primary w-100"
-                    role="button"
-                    data-bs-toggle="button"
-                  >
-                    View Maps
-                  </Link> */}
                   <Button
                     rounded
                     size="xl"

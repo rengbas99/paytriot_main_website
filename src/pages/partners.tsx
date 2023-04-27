@@ -158,16 +158,6 @@ export default function Partners() {
                 </div>
               </div>
             </div>
-
-            {/* <lottie-player
-							src="https://assets2.lottiefiles.com/packages/lf20_7ovzuurf/Partners/data.json"
-							background="transparent"
-							speed={1}
-							style={{}}
-							loop=""
-							autoPlay=""
-						/> */}
-
             <AgentProgramComponent />
             <br />
             <ReferralProgramComponent />
