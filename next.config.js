@@ -32,67 +32,73 @@ const nextConfig = {
        {
         source: '/blog/page/about-us',
         destination: '/about-us',
-        permanent: false,
+        permanent: true,
         basePath: false
       },
       {
         source: '/blog/page/services',
         destination: '/services',
-        permanent: false,
+        permanent: true,
         basePath: false
        },
        {
         source: '/blog/page/wallet',
         destination: '/wallet',
-        permanent: false,
+        permanent: true,
         basePath: false
        },
        {
         source: '/blog/page/contact-us',
         destination: '/contact-us',
-        permanent: false,
+        permanent: true,
         basePath: false
        },
        {
         source: '/blog/page/partners',
         destination: '/partners',
-        permanent: false,
+        permanent: true,
         basePath: false
        },
        {
         source: '/blog/page/bank-account',
         destination: '/bank-account',
-        permanent: false,
+        permanent: true,
         basePath: false
        },
        {
         source: '/blog/page/pricing',
         destination: '/pricing',
-        permanent: false,
+        permanent: true,
         basePath: false
        },
        {
         source: '/blog/page/blog',
         destination: '/blog',
-        permanent: false,
+        permanent: true,
         basePath: false
        },
        {
         source: '/blog/page/terms-and-conditions',
         destination: '/terms-and-conditions',
-        permanent: false,
+        permanent: true,
         basePath: false
        },
        {
         source: '/blog/page/privacy-policy',
         destination: '/privacy-policy',
-        permanent: false,
+        permanent: true,
         basePath: false
        },
        {
         source: '/news/page/',
         destination: '/blog',
-        permanent: false,
+        permanent: true,
+        basePath: false
+       },
+       {
+        source: '/home/about/',
+        destination: '/about-us',
+        permanent: true,
         basePath: false
        },
 
