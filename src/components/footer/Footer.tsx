@@ -63,33 +63,33 @@ export default function Footer() {
                     <Link href="/">Home</Link>
                   </li>
                   <li>
-                    <Link href="about-us">About us</Link>
+                    <Link href="/about-us">About us</Link>
                   </li>
                   <li>
-                    <Link href="blog">Blog</Link>
+                    <Link href="/blog">Blog</Link>
                   </li>
                   <li>
-                    <Link href="#">Testimonial</Link>
+                    <Link href="/">Testimonial</Link>
                   </li>
                   <li>
-                    <Link href="partners">Clients</Link>
+                    <Link href="/partners">Clients</Link>
                   </li>
                 </ul>
-                <ul className="nav-footer ps-0">
+                <ul className="/nav-footer ps-0">
                   <li>
-                    <Link href="services">Service</Link>
+                    <Link href="/services">Service</Link>
                   </li>
                   <li>
-                    <Link href="bank-account">Bank Account</Link>
+                    <Link href="/bank-account">Bank Account</Link>
                   </li>
                   <li>
-                    <Link href="partners">Partners</Link>
+                    <Link href="/partners">Partners</Link>
                   </li>
                   <li>
-                    <Link href="wallet">Wallet</Link>
+                    <Link href="/wallet">Wallet</Link>
                   </li>
                   <li>
-                    <Link href="contact-us">Contact us</Link>
+                    <Link href="/contact-us">Contact us</Link>
                   </li>
                 </ul>
               </div>
@@ -130,10 +130,10 @@ export default function Footer() {
                 </div>
               </div>
               <div className="terms-policy d-block d-lg-none mt-4">
-                <Link href="terms-and-conditions" className="label-14 me-3">
+                <Link href="/terms-and-conditions" className="label-14 me-3">
                   Terms &amp; Conditions
                 </Link>
-                <Link href="privacy-policy" className="label-14">
+                <Link href="/privacy-policy" className="label-14">
                   Privacy Policy
                 </Link>
               </div>
@@ -145,10 +145,10 @@ export default function Footer() {
             </Link>
 
             <div className="terms-policy">
-              <Link href="terms-and-conditions" className="label-14 me-3">
+              <Link href="/terms-and-conditions" className="label-14 me-3">
                 Terms &amp; Conditions
               </Link>
-              <Link href="privacy-policy" className="label-14">
+              <Link href="/privacy-policy" className="label-14">
                 Privacy Policy
               </Link>
             </div>

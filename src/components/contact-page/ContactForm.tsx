@@ -128,10 +128,10 @@ const ContactForm: React.FC = () => {
           rounded
           className="my-2"
           size="lg"
-          type="url"
+          type="text"
           label="Website"
           {...register('website', { required: true })}
-          status={errors.email ? 'error' : undefined}
+          status={errors.website ? 'error' : undefined}
           fullWidth
         />
 
