@@ -14,7 +14,7 @@ export default function TermsAndConditions() {
           rel="stylesheet"
           href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
         />
-        <title>Terms and Conditions</title>
+        <title>Paytriot | Terms and Conditions</title>
       </Head>
       <main>
       

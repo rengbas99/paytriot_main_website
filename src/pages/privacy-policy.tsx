@@ -13,7 +13,7 @@ export default function PrivacyPolicy() {
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
-    <title>Privacy Policy</title>
+    <title>Paytriot | Privacy Policy</title>
     </Head>
     <main>
       <title>Privacy Policy</title>
