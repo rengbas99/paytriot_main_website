@@ -12,6 +12,7 @@ export default function Home() {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Paytriot Payments Landing Page"/>
 
         <title>Paytriot Payments</title>
       </Head>
