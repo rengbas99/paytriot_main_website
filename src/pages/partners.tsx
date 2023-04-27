@@ -26,7 +26,7 @@ export default function Partners() {
       <main>
         <section className="partners">
           <div className="container">
-            <h2 className="text-center">Paytriot Partners</h2>
+            <h1 className="text-center">Paytriot Partners</h1>
             <p className="p-18 mt-4 text-center">
               Great companies we work with 
             </p>

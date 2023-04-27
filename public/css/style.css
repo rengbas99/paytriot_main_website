@@ -157,7 +157,7 @@ h1 {
     font-style: normal;
     font-weight: bold;
     /* font-size: 72px; */
-    font-size: 32px;
+    font-size: 16px;
     line-height: 105%;
     color: #021639;
 }
@@ -757,6 +757,10 @@ section.signup form {
     box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.05);
 }
 
+.wallet-heading {
+    font-size: clamp(2.2rem,3vw,3rem);
+}
+
 .form-select {
     border: 1px solid #D4D5D9 !important;
     border-radius: 5px;
@@ -1333,7 +1337,7 @@ ul.nav-footer li {
 
     /* typography  */
     h1 {
-        font-size: 88px;
+        font-size: 48px;
     }
 
     h2 {

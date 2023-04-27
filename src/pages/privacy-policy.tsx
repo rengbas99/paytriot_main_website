@@ -19,7 +19,7 @@ export default function PrivacyPolicy() {
       <title>Privacy Policy</title>
       <section className="partners">
         <div className="container">
-          <h2>Privacy Policy</h2>
+          <h1>Privacy Policy</h1>
           <br />
           Online privacy is constantly evolving, and , trading as Paytriot
           ("Paytriot") a company that is organized in the United Kingdom, will

@@ -20,7 +20,7 @@ export default function TermsAndConditions() {
       
       <section className="partners">
         <div className="container">
-          <h2>Terms and Conditions</h2>
+          <h1>Terms and Conditions</h1>
           <br />
           <div className="tsmall">
             <div className="my">

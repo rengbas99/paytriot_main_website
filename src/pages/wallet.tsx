@@ -68,13 +68,13 @@ export default function WalletPage() {
           rel="stylesheet"
           href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
         />
-        <title>Wallet</title>
+        <title>Wallet | Paytriot Payments</title>
       </Head>
     
       <section className="wallet">
         <div className="container accordion-body-container">
           <div className="row">
-            <h2 className="text-capitalize mb-5">Paytriot Wallet</h2>
+            <h1 className="text-capitalize mb-5 Typography_heading__h1__0c7YX">Paytriot Wallet</h1>
             <div className="col-lg-5 accordion">
               <Grid.Container gap={2}>
                 <Grid>

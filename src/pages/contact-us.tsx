@@ -22,7 +22,7 @@ export default function ContactUs() {
       <main>
         <section className="contact">
           <div className="container">
-            <h2 className="text-center">Contact Us</h2>
+            <h1 className="text-center">Contact Us</h1>
             <p className="p-18 text-center">Get in touch with us</p>
             <div className="row">
               {/* <div className="col-lg-4 d-flex justify-content-center">

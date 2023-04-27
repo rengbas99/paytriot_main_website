@@ -26,7 +26,7 @@ export default function Services() {
             <div className="row">
               <div className="col-lg-6">
                 <div className="text-services">
-                  <h2 className="mb-4">Services</h2>
+                  <h1 className="mb-4">Services</h1>
                   <p className="p-18 mb-5">
                     Paytriot Payments has a broad range of financial services
                     that together, create a robust suite of Merchant Services.

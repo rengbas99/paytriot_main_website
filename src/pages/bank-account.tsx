@@ -27,9 +27,9 @@ export default function BankAccount() {
       <main>
         <section className="banking">
           <div className="container">
-            <h2 className="text-center mb-4">
+            <h1 className="text-center mb-4">
               New Age Business Banking for You
-            </h2>
+            </h1>
             <p className="p-18 text-center mb-5">
               A Simple &amp; Powerful Business Account is Here
             </p>
