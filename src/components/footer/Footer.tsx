@@ -63,33 +63,33 @@ export default function Footer() {
                     <Link href="/">Home</Link>
                   </li>
                   <li>
-                    <Link href="/about-us">About us</Link>
+                    <Link href="https://www.paytriot.co.uk/about-us">About us</Link>
                   </li>
                   <li>
-                    <Link href="/blog">Blog</Link>
+                    <Link href="https://www.paytriot.co.uk/blog">Blog</Link>
                   </li>
                   <li>
                     <Link href="/">Testimonial</Link>
                   </li>
                   <li>
-                    <Link href="/partners">Clients</Link>
+                    <Link href="https://www.paytriot.co.uk/partners">Clients</Link>
                   </li>
                 </ul>
                 <ul className="/nav-footer ps-0">
                   <li>
-                    <Link href="/services">Service</Link>
+                    <Link href="https://www.paytriot.co.uk/services">Service</Link>
                   </li>
                   <li>
-                    <Link href="/bank-account">Bank Account</Link>
+                    <Link href="https://www.paytriot.co.uk/bank-account">Bank Account</Link>
                   </li>
                   <li>
-                    <Link href="/partners">Partners</Link>
+                    <Link href="https://www.paytriot.co.uk/partners">Partners</Link>
                   </li>
                   <li>
-                    <Link href="/wallet">Wallet</Link>
+                    <Link href="https://www.paytriot.co.uk/wallet">Wallet</Link>
                   </li>
                   <li>
-                    <Link href="/contact-us">Contact us</Link>
+                    <Link href="https://www.paytriot.co.uk/contact-us">Contact us</Link>
                   </li>
                 </ul>
               </div>
