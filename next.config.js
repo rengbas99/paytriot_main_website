@@ -96,7 +96,7 @@ const nextConfig = {
         basePath: false
        },
        {
-        source: '/home/about/',
+        source: '/home/about',
         destination: '/about-us',
         permanent: true,
         basePath: false
