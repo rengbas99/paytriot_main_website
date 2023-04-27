@@ -10,6 +10,8 @@ import iconTopUpSvg from 'public/images/icon-topup.svg';
 import iconWalletSvg from 'public/images/icon-wallet.svg';
 import { useEffect, useState } from 'react';
 
+import Head from 'next/head';
+
 export default function WalletPage() {
   const [accordionOpen, setAccordionOpen] = useState([
     true,
@@ -56,6 +58,18 @@ export default function WalletPage() {
 
   return (
     <>
+      <Head>
+        {/* Required meta tags */}
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+        />
+        <title>Wallet</title>
+      </Head>
+    
       <section className="wallet">
         <div className="container accordion-body-container">
           <div className="row">

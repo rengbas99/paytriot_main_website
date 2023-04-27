@@ -1,6 +1,22 @@
+import Head from 'next/head';
+
 export default function TermsAndConditions() {
   return (
-    <main>
+    <>
+
+      <Head>
+        {/* Required meta tags */}
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+        />
+        <title>Terms and Conditions</title>
+      </Head>
+      <main>
+      
       <section className="partners">
         <div className="container">
           <h2>Terms and Conditions</h2>
@@ -1585,5 +1601,6 @@ export default function TermsAndConditions() {
         </div>
       </section>
     </main>
+    </>
   );
 }

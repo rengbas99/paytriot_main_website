@@ -1,6 +1,21 @@
+import Head from 'next/head';
+
 export default function PrivacyPolicy() {
   return (
+    <>
+    <Head>
+    {/* Required meta tags */}
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <title>Privacy Policy</title>
+    </Head>
     <main>
+      <title>Privacy Policy</title>
       <section className="partners">
         <div className="container">
           <h2>Privacy Policy</h2>
@@ -613,5 +628,6 @@ export default function PrivacyPolicy() {
         </div>
       </section>
     </main>
+    </>
   );
 }
