@@ -12,29 +12,155 @@ const nextConfig = {
     //  permanent: true - 308 redirection
     return [
       {
-        source: '/team',
-        destination: '/about-us',
-        permanent: true
-      },
-
-      //Path Matching - will match `/old-blog/a`, but not `/old-blog/a/b`
+        source: '/home/newsdetail/:slug',
+        destination: '/blog/:slug',
+        permanent: false
+     },
+      //Wildcard Path Matching - will match `/blog/a` and `/blog/a/b`
       {
-         source: '/home/newsdetail/:slug',
-         destination: '/blog/:slug',
-         permanent: false
+        source: '/home/newsdetail/:slug*',
+        destination: '/blog/:slug*',
+        permanent: false
       },
-       //Wildcard Path Matching - will match `/blog/a` and `/blog/a/b`
-       {
-         source: '/home/newsdetail/:slug*',
-         destination: '/blog/:slug*',
-         permanent: false
+      //Regex Path Matching - The regex below will match `/post/123` but not `/post/abc`
+      {
+        source: '/post/:slug(\\d{1,})',
+        destination: '/news/:slug',
+        permanent: false
        },
-       //Regex Path Matching - The regex below will match `/post/123` but not `/post/abc`
        {
-         source: '/post/:slug(\\d{1,})',
-         destination: '/news/:slug',
-         permanent: false
-        }     
+         source: '/blog/about-us',
+         destination: '/about-us',
+         permanent: false,
+         basePath: false
+       },
+       {
+         source: '/blog/services',
+         destination: '/services',
+         permanent: false,
+         basePath: false
+        },
+        {
+         source: '/blog/wallet',
+         destination: '/wallet',
+         permanent: false,
+         basePath: false
+        },
+        {
+         source: '/blog/contact-us',
+         destination: '/contact-us',
+         permanent: false,
+         basePath: false
+        },
+        {
+         source: '/blog/partners',
+         destination: '/partners',
+         permanent: false,
+         basePath: false
+        },
+        {
+         source: '/blog/bank-account',
+         destination: '/bank-account',
+         permanent: false,
+         basePath: false
+        },
+        {
+         source: '/blog/pricing',
+         destination: '/pricing',
+         permanent: false,
+         basePath: false
+        },
+        {
+         source: '/blog/blog',
+         destination: '/blog',
+         permanent: false,
+         basePath: false
+        },
+        {
+         source: '/blog/terms-and-conditions',
+         destination: '/terms-and-conditions',
+         permanent: false,
+         basePath: false
+        },
+        {
+         source: '/blog/privacy-policy',
+         destination: '/privacy-policy',
+         permanent: false,
+         basePath: false
+        },
+        {
+         source: '/news',
+         destination: '/blog',
+         permanent: false,
+         basePath: false
+        },
+        {
+         source: '/blog/page/about-us',
+         destination: '/about-us',
+         permanent: false,
+         basePath: false
+       },
+       {
+         source: '/blog/page/services',
+         destination: '/services',
+         permanent: false,
+         basePath: false
+        },
+        {
+         source: '/blog/page/wallet',
+         destination: '/wallet',
+         permanent: false,
+         basePath: false
+        },
+        {
+         source: '/blog/page/contact-us',
+         destination: '/contact-us',
+         permanent: false,
+         basePath: false
+        },
+        {
+         source: '/blog/page/partners',
+         destination: '/partners',
+         permanent: false,
+         basePath: false
+        },
+        {
+         source: '/blog/page/bank-account',
+         destination: '/bank-account',
+         permanent: false,
+         basePath: false
+        },
+        {
+         source: '/blog/page/pricing',
+         destination: '/pricing',
+         permanent: false,
+         basePath: false
+        },
+        {
+         source: '/blog/page/blog',
+         destination: '/blog',
+         permanent: false,
+         basePath: false
+        },
+        {
+         source: '/blog/page/terms-and-conditions',
+         destination: '/terms-and-conditions',
+         permanent: false,
+         basePath: false
+        },
+        {
+         source: '/blog/page/privacy-policy',
+         destination: '/privacy-policy',
+         permanent: false,
+         basePath: false
+        },
+        {
+         source: '/news/page/',
+         destination: '/blog',
+         permanent: false,
+         basePath: false
+        },
+
     ];
   },
 
