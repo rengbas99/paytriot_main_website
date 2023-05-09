@@ -16,10 +16,10 @@ export default function BlogIndex(props: any) {
    * This provides some fallback values to PageMeta so that a pageContent
    * entry is not required for /blog
    */
-  const pageTitle = pageContent ? pageContent.title : 'Blog';
+  const pageTitle = pageContent ? pageContent.title : 'Paytriot Blog';
   const pageDescription = pageContent
     ? pageContent.description
-    : 'Articles | Next.js Contentful blog starter';
+    : 'Articles | blog starter';
 
   return (
     <MainLayout preview={preview}>

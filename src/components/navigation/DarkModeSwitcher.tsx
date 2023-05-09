@@ -22,7 +22,6 @@ const DarkModeSwitcher = () => {
   }
 
   const handleDarkModeToggle = () => {
-    //console.log(theme);
     if (theme === 'dark') {
       setTheme('light');
     } else {

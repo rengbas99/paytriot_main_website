@@ -75,7 +75,7 @@ export default function Footer() {
                     <Link href="https://www.paytriot.co.uk/partners">Clients</Link>
                   </li>
                 </ul>
-                <ul className="/nav-footer ps-0">
+                <ul className="nav-footer ps-0 me-4">
                   <li>
                     <Link href="https://www.paytriot.co.uk/services">Service</Link>
                   </li>
