@@ -63,7 +63,7 @@ export default function AboutUs() {
         <div className="container">
           <div className="row">
             <div className="col-lg-6 ps-lg-5 d-flex flex-column justify-content-center align-items-start">
-              <h1 className="mb-lg-5">Who Are We </h1>
+              <h1 className="mb-lg-5">Who Are We</h1>
               <p className="p-18 mb-lg-5">
                 Paytriot Payment has been established for 7 years helping online businesses accept payments. 
                 We are now revolutionising the payment industry by charging a monthly flat fee for smaller businesses allowing them to accept Credit and Debit Cards without taking a percentage of their profits allowing them to scale. 
@@ -205,7 +205,7 @@ export default function AboutUs() {
           <div className="row">
             <div className="col-4">
               <div className="testi-wrap d-flex flex-column align-items-center">
-                <Image src={imgCustomer1} alt="" className="cust-prof" />
+                <Image src={imgCustomer2} alt="" className="cust-prof" />
                 <h4 className="mt-4">Bilal Latif</h4>
                 <h5 className="fst-italic">Finance Director</h5>
                 <div className="rating-wrap d-flex my-4">
@@ -218,7 +218,7 @@ export default function AboutUs() {
             </div>
             <div className="col-4">
               <div className="testi-wrap d-flex flex-column align-items-center">
-                <Image src={imgCustomer2} alt="" className="cust-prof" />
+                <Image src={imgCustomer1} alt="" className="cust-prof" />
                 <h4 className="mt-4">Wendy Young</h4>
                 <h5 className="fst-italic">Director / Hilton</h5>
                 <div className="rating-wrap d-flex my-4">
