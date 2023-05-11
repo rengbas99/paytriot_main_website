@@ -117,7 +117,7 @@ function BusinessRateCalculator() {
           <h3 className="mb-5 fw-bold text-capitalize">Estimate Your Cost</h3>
           <div className="d-lg-flex mb-5">
             <div className="w-100 me-lg-3 mb-3 mb-lg-0">
-              <div className="p-16 mb-2">Plan</div>
+              <div className="p-16 mb-2 text-black">Plan</div>
               <select
                 className="form-select"
                 // id="trans-dom"

@@ -1507,7 +1507,11 @@ ul.nav-footer li {
 
 .text-light,
 [data-theme="dark"] .business-tab .p-16 {
-    color: #021639;
+    color: #021639 !important;
+}
+.text-light,
+[data-theme="dark"] .business-tab .p-14 {
+    color: #021639 !important;
 }
 
 .text-light,
