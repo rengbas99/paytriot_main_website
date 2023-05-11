@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 const DarkModeSwitcher = () => {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  console.log("DarkmodeSwitcher---->",theme)
 
   useEffect(() => {
     setMounted(true);

@@ -15,7 +15,7 @@ const poppins = Poppins({
 });
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider>
+    <ThemeProvider enableSystem={false} >
       <NextUIProvider>
         <main className={`bg ${poppins.className}`}>
           <NavigationMenu />

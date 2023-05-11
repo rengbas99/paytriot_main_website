@@ -9,6 +9,8 @@ const nextConfig = {
     domains: ['images.ctfassets.net']
   },
 
+  compress: true,
+
   reactStrictMode: true,
   async redirects() {
     //  permanent: false - 307 redirection
