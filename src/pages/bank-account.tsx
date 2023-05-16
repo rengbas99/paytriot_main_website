@@ -22,16 +22,16 @@ export default function BankAccount() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Paytriot Payments Bank Account"/>
 
-        <title>Bank Account | Paytriot</title>
+        <title>E-Money Account | Paytriot</title>
       </Head>
       <main>
         <section className="banking">
           <div className="container">
             <h1 className="text-center mb-4">
-              New Age Business Banking for You
+              New Age E-Money Account for You
             </h1>
             <p className="p-18 text-center mb-5">
-              A Simple &amp; Powerful Business Account is Here
+              A Simple &amp; Powerful E-Money Account is Here
             </p>
             <LottiePlayer animationData={servicesDashboardJson} />
           </div>
@@ -47,7 +47,7 @@ export default function BankAccount() {
                 <div className="acc-wrap d-flex flex-column align-items-center justify-content-between">
                   <Image src={iconWalletSvg} alt="" className="w-100" />
                   <p className="p-16 text-center mt-4">
-                    Zero-Balance Business account. No Average monthly balance
+                    Zero-Balance E-Money Account. No Average monthly balance
                     charges
                   </p>
                 </div>
@@ -56,7 +56,7 @@ export default function BankAccount() {
                 <div className="acc-wrap d-flex flex-column align-items-center justify-content-between">
                   <Image src={iconCurrencySvg} alt="" className="w-100" />
                   <p className="p-16 text-center mt-4">
-                    Free transactions to All bank accounts
+                    Free transactions to All E-Money accounts
                   </p>
                 </div>
               </div>
@@ -90,7 +90,7 @@ export default function BankAccount() {
                 <div className="txt-wrap">
                   <h2>Easy money transfers in seconds</h2>
                   <p className="p-18 mt-4">
-                    Transfer funds from your bank account with speed. We support Faster Payments, SEPA and SWIFT
+                    Transfer funds from your E-Money Account with speed. We support Faster Payments, SEPA and SWIFT
                   </p>
                 </div>
               </div>
@@ -100,7 +100,7 @@ export default function BankAccount() {
                 <div className="txt-wrap">
                   <h2>One Account, Multiple Access</h2>
                   <p className="p-18 mt-4">
-                    Setup your bank account with multiple currencies and access it online or via your app on iOS or Android..
+                    Setup your E-Money Account with multiple currencies and access it online or via your app on iOS or Android..
                   </p>
                 </div>
               </div>

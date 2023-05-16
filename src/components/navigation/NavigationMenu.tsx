@@ -100,10 +100,10 @@ const navigationItems: MenuItem[] = [
   ]},
   { label: 'Products', href: 'wallet', dropdownItems: [
       {
-        key: 'Bank Account',
-        label: 'Bank Account',
+        key: 'E-Money Account',
+        label: 'E-Money Account',
         description:
-          'Have a bank account setup with Paytriot to have funds deposited from your merchant account.',
+          'Have a E-Money account setup with Paytriot to have funds deposited from your merchant account.',
         href: 'https://www.paytriot.co.uk/bank-account'
     },
     {
