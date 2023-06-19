@@ -141,7 +141,7 @@ export default function Footer() {
           </div>
           <div className="trademarks d-lg-flex justify-content-between d-none">
             <Link href={'#'} className="label-14">
-              @ 2023 Paytriot Ltd
+              @ 2023 Paytriot Ltd is a registered company headquartered at The Charter Building, Charter Place, Uxbridge in the United Kingdom, number 09910014. Paytriot Ltd (Firm reference number 902060) is an agent of PayrNet Ltd which is an Electronic Money Institution authorised by the FCA under the Electronic Money Regulations 2011 (EMR’s) with Firm Reference Number 900594.
             </Link>
 
             <div className="terms-policy">
