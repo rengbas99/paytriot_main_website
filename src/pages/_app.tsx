@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { ThemeProvider } from 'next-themes';
 import type { AppProps } from 'next/app';
 import 'public/css/style.css';
+import TrackingScript from '@/helpers/hooks/TrackingScript';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -18,6 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <ThemeProvider enableSystem={false} >
       <NextUIProvider>
         <main className={`bg ${poppins.className}`}>
+          <TrackingScript/>
           <NavigationMenu />
           <Component {...pageProps} />
           <CallToAction />
