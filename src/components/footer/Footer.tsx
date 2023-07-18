@@ -80,7 +80,7 @@ export default function Footer() {
                     <Link href="https://www.paytriot.co.uk/services">Service</Link>
                   </li>
                   <li>
-                    <Link href="https://www.paytriot.co.uk/bank-account">Bank Account</Link>
+                    <Link href="https://www.paytriot.co.uk/bank-account">E-Money Account</Link>
                   </li>
                   <li>
                     <Link href="https://www.paytriot.co.uk/partners">Partners</Link>
