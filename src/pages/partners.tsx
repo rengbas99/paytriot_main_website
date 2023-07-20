@@ -8,7 +8,7 @@ import imgHamptonLogo from 'public/images/img-logo-hampton.png';
 import imgLogoJumpSellerLogo from 'public/images/img-logo-jumpseller.png';
 import imgLuisLogo from 'public/images/img-logo-luis.png';
 import imgMatraLogo from 'public/images/img-logo-matra.png';
-import imgNetflixLogo from 'public/images/img-logo-netflix.png';
+import imgCudeLogo from 'public/images/img-logo-cude.png';
 import imgPaypalLogo from 'public/images/img-logo-paypal.png';
 import imgLogoShopify from 'public/images/img-logo-shopify.png';
 import imgPizzaLogo from 'public/images/img-logo-pizza.png';
@@ -104,14 +104,15 @@ export default function Partners() {
               <div className="col-lg-4 mb-4">
                 <div className="partners-box d-flex flex-column align-items-center">
                   <Image
-                    width={'80'}
-                    src={imgNetflixLogo}
+                    width={'200'}
+                    height={'200'}
+                    src={imgCudeLogo}
                     alt=""
                     className="logo-partners"
                   />
-                  <label className="partners-txt">Netflix</label>
+                  <label className="partners-txt">Cude Design</label>
                   <p className="p-14 text-opacity">
-                    Global Streaming Service
+                    Web Design Agency
                   </p>
                 </div>
               </div>

@@ -104,7 +104,7 @@ const navigationItems: MenuItem[] = [
         label: 'E-Money Account',
         description:
           'Have a E-Money account setup with Paytriot to have funds deposited from your merchant account.',
-        href: 'https://www.paytriot.co.uk/bank-account'
+        href: '/e-money-account'
     },
     {
       key: 'Wallet',
