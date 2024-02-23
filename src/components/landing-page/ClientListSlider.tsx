@@ -1,8 +1,11 @@
 import Image from 'next/image';
 
+
 // import logoHiltonHoverPng from 'public/images/logo-hilton-hover.png';
 import logoHiltonLightPng from 'public/images/logo-hilton.png';
 // import logoHiltonDarkPng from 'public/images/logo-hilton-dark.png';
+
+import logoShopifyLightPng from 'public/images/logo-shopify.svg';
 
 // import logoPizzahutHoverPng from 'public/images/logo-pizzahut-hover.png';
 import logoPizzahutLightPng from 'public/images/logo-pizzahut.png';
@@ -25,7 +28,7 @@ export default function ClientListSlider() {
     <>
       <div className="client-list">
         <div className="inner-client-img">
-          <Image src={logoHiltonLightPng} alt="" className="w-100 client-img" />
+          <Image src={logoShopifyLightPng} alt="" className="w-100 client-img" />
         </div>
         <div className="inner-client-img">
           <Image

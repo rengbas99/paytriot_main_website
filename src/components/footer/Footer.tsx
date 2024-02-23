@@ -33,19 +33,64 @@ export default function Footer() {
               </div>
               <div className="socmed d-flex mb-4">
                 <div className="icon-small icon1">
-                  <Image src={iconFacebookSvg} alt="" className="img-logo" />
+                  <Link
+                  href="https://www.facebook.com/paytriotP/"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className=""
+                  role="button"
+                  data-bs-toggle="button"
+                  >
+                    <Image src={iconFacebookSvg} alt="" className="img-logo" />
+                  </Link>
                 </div>
                 <div className="icon-small icon2">
-                  <Image src={iconTwitterSvg} alt="" className="img-logo" />
+                <Link
+                  href="https://twitter.com/paytriotp?lang=en"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className=""
+                  role="button"
+                  data-bs-toggle="button"
+                  >
+                    <Image src={iconTwitterSvg} alt="" className="img-logo" />
+                  </Link>
                 </div>
                 <div className="icon-small icon3">
-                  <Image src={iconLinkedInSvg} alt="" className="img-logo" />
+                <Link
+                  href="https://www.linkedin.com/company/paytriot-payments/"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className=""
+                  role="button"
+                  data-bs-toggle="button"
+                  >
+                    <Image src={iconLinkedInSvg} alt="" className="img-logo" />
+                  </Link>
                 </div>
                 <div className="icon-small icon4">
-                  <Image src={iconYoutubeSvg} alt="" className="img-logo" />
+                <Link
+                  href="https://www.youtube.com/channel/UC2bC4orFLMu6DuB4FzEjuaw"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className=""
+                  role="button"
+                  data-bs-toggle="button"
+                  >
+                    <Image src={iconYoutubeSvg} alt="" className="img-logo" />
+                  </Link>  
                 </div>
                 <div className="icon-small icon5">
-                  <Image src={icoEmailSvg} alt="" className="img-logo" />
+                <Link
+                  href="mailto:info@paytriot.co.uk"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className=""
+                  role="button"
+                  data-bs-toggle="button"
+                  >
+                    <Image src={icoEmailSvg} alt="" className="img-logo" />
+                  </Link>
                 </div>
               </div>
               <label
