@@ -166,7 +166,7 @@ export default function AboutUs() {
                   <p className="p-18">
                   </p>
                   <p className="p-18">
-                  Paytriot registers with Visa and MasterCard. Brining all our services in-house including boarding of merchants, underwriting and card issuing. 
+                  Paytriot registers with Visa and MasterCard. Bringing all our services in-house including boarding of merchants, underwriting and card issuing. 
                   </p>
                 </div>
                 <div className="story-bullet-outer position-absolute top-50">
