@@ -23,7 +23,7 @@ export default function CallToAction() {
                       <Image src={iconWhiteCheckSvg} alt="" />
                     </div>
                     <label htmlFor="label-14" className="label-14">
-                      Quick Boariding
+                      Quick Boarding
                     </label>
                   </div>
                   <div className="label-item d-flex align-items-center me-lg-5 mb-3 mb-lg-0">
