@@ -127,7 +127,7 @@ const navigationItems: MenuItem[] = [
 
 const collapseItems: MenuItem[] = [
   { label: 'Wallet', href: 'wallet' },
-  { label: 'Bank Account', href: 'bank-account' },
+  { label: 'E-Money Account', href: 'e-money-account' },
   { label: 'Partners', href: 'partners' },
   { label: 'Services', href: 'services' },
   { label: 'About Us', href: 'about-us' },

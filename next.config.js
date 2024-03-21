@@ -65,8 +65,8 @@ const nextConfig = {
         basePath: false
        },
        {
-        source: '/blog/page/bank-account',
-        destination: '/bank-account',
+        source: '/blog/page/e-money-account',
+        destination: '/e-money-account',
         permanent: true,
         basePath: false
        },
