@@ -9,6 +9,7 @@ import { ThemeProvider } from 'next-themes';
 import type { AppProps } from 'next/app';
 import 'public/css/style.css';
 import TrackingScript from '@/helpers/hooks/TrackingScript';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -19,6 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <ThemeProvider enableSystem={false} >
       <NextUIProvider>
         <main className={`bg ${poppins.className}`}>
+          <GoogleAnalytics gaId="G-SQH6E53FR3"/>
           <TrackingScript/>
           <NavigationMenu />
           <Component {...pageProps} />
