@@ -82,6 +82,7 @@ const ContactForm: React.FC = () => {
         setError('Oops! Something went wrong.');
       }
     } catch (err) {
+      console.error('Caught error:', err);
       setError('Oops! Something went wrong.');
     } finally {
       setLoading(false);
